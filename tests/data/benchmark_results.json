@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-10-24T12:57:47.153361+00:00",
+  "dataset": {
+    "path": "/home/budi/literasiai/tests/data/classifier_benchmark.json",
+    "samples": 1,
+    "categories": 1
+  },
+  "settings": {
+    "base_url": "https://integrate.api.nvidia.com/v1",
+    "api_keys": 2,
+    "timeout": 60,
+    "max_retries": 2,
+    "delay_s": 1.2,
+    "cache_enabled": false
+  },
+  "models": {
+    "nvidia/nemotron-3.5-lightning-30b-a3b": {
+      "summary": {
+        "total": 1,
+        "evaluated": 1,
+        "correct": 1,
+        "errors": 0,
+        "accuracy_evaluated": 1.0,
+        "accuracy_all": 1.0,
+        "latency": {
+          "count": 1,
+          "avg": 2.584,
+          "median": 2.584,
+          "p95": 2.584,
+          "min": 2.584,
+          "max": 2.584
+        },
+        "per_category": {
+          "Artificial Intelligence": {
+            "total": 1,
+            "evaluated": 1,
+            "correct": 1,
+            "errors": 0,
+            "accuracy": 1.0
+          }
+        },
+        "stopped_early": false,
+        "elapsed_s": 2.58,
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "cache": {
+          "enabled": false,
+          "size": 0,
+          "maxsize": 2048,
+          "ttl": 86400
+        }
+      },
+      "results": [
+        {
+          "id": "ai-01",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "constraint satisfaction",
+            "heuristic search",
+            "backtracking",
+            "local search",
+            "course scheduling",
+            "timetabling",
+            "university",
+            "optimization"
+          ],
+          "error": null,
+          "latency_s": 2.584,
+          "difficulty": "medium"
+        }
+      ]
+    },
+    "nvidia/nemotron-3.5-super-vl-120b-a12b": {
+      "summary": {
+        "total": 1,
+        "evaluated": 1,
+        "correct": 1,
+        "errors": 0,
+        "accuracy_evaluated": 1.0,
+        "accuracy_all": 1.0,
+        "latency": {
+          "count": 1,
+          "avg": 1.535,
+          "median": 1.535,
+          "p95": 1.535,
+          "min": 1.535,
+          "max": 1.535
+        },
+        "per_category": {
+          "Artificial Intelligence": {
+            "total": 1,
+            "evaluated": 1,
+            "correct": 1,
+            "errors": 0,
+            "accuracy": 1.0
+          }
+        },
+        "stopped_early": false,
+        "elapsed_s": 1.54,
+        "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+        "cache": {
+          "enabled": false,
+          "size": 0,
+          "maxsize": 2048,
+          "ttl": 86400
+        }
+      },
+      "results": [
+        {
+          "id": "ai-01",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "constraint satisfaction",
+            "heuristic search",
+            "university timetabling",
+            "backtracking",
+            "local search",
+            "course scheduling"
+          ],
+          "error": null,
+          "latency_s": 1.535,
+          "difficulty": "medium"
+        }
+      ]
+    }
+  },
+  "fallback": {
+    "summary": {
+      "total": 1,
+      "evaluated": 1,
+      "correct": 1,
+      "errors": 0,
+      "accuracy_evaluated": 1.0,
+      "accuracy_all": 1.0,
+      "latency": {
+        "count": 1,
+        "avg": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "per_category": {
+        "Artificial Intelligence": {
+          "total": 1,
+          "evaluated": 1,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 1.0
+        }
+      },
+      "elapsed_s": 0.0,
+      "model": "keyword-fallback"
+    },
+    "results": [
+      {
+        "id": "ai-01",
+        "expected": "Artificial Intelligence",
+        "predicted": "Artificial Intelligence",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      }
+    ]
+  }
+}

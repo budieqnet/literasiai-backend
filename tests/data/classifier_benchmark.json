@@ -1,0 +1,879 @@
+{
+  "version": 1,
+  "description": "Benchmark klasifikasi LiterasiAI — 120 dokumen berlabel (4 per kategori), campuran mudah/menengah/sulit dengan banyak kasus ambigu (metode vs domain).",
+  "notes": "Label 'Other' adalah catch-all yang subjektif; exact-match menghukum model yang memilih domain terdekat. Gunakan akurasi non-Other dan metrik per kategori untuk interpretasi yang adil.",
+  "categories": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Data Science",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Robotics",
+    "Cybersecurity",
+    "Cloud Computing",
+    "Internet of Things",
+    "Blockchain",
+    "Quantum Computing",
+    "Bioinformatics",
+    "Medical Imaging",
+    "Health Informatics",
+    "Environmental Science",
+    "Physics",
+    "Chemistry",
+    "Mathematics",
+    "Engineering",
+    "Economics",
+    "Social Science",
+    "Law",
+    "Education",
+    "Psychology",
+    "Literature",
+    "History",
+    "Philosophy",
+    "Religion",
+    "Arts",
+    "Other"
+  ],
+  "samples": [
+    {
+      "id": "ai-01",
+      "expected": "Artificial Intelligence",
+      "difficulty": "medium",
+      "title": "Constraint Satisfaction and Heuristic Search for University Timetabling",
+      "abstract": "The paper formulates course scheduling as a constraint satisfaction problem and compares backtracking with local search heuristics."
+    },
+    {
+      "id": "ai-02",
+      "expected": "Artificial Intelligence",
+      "difficulty": "medium",
+      "title": "A Belief-Desire-Intention Architecture for Autonomous Decision Making",
+      "abstract": "We propose an agent architecture that combines symbolic planning, intention reconsideration, and runtime goal selection."
+    },
+    {
+      "id": "ai-03",
+      "expected": "Artificial Intelligence",
+      "difficulty": "hard",
+      "title": "Representasi Pengetahuan untuk Sistem Pakar Diagnosis Penyakit Tanaman",
+      "abstract": "Penelitian membangun basis aturan dan mesin inferensi forward chaining untuk mendiagnosis hama tanaman pangan."
+    },
+    {
+      "id": "ai-04",
+      "expected": "Artificial Intelligence",
+      "difficulty": "hard",
+      "title": "Automated Planning Under Uncertainty with Partially Observable State",
+      "abstract": "We study contingent planning algorithms and belief-state search for agents acting with incomplete information."
+    },
+    {
+      "id": "ml-01",
+      "expected": "Machine Learning",
+      "difficulty": "easy",
+      "title": "Regularization Strategies for Deep Neural Networks in Low-Data Regimes",
+      "abstract": "Dropout, weight decay, and data augmentation are compared across convolutional and transformer models."
+    },
+    {
+      "id": "ml-02",
+      "expected": "Machine Learning",
+      "difficulty": "medium",
+      "title": "A Comparative Study of Gradient Boosting and Random Forests for Tabular Prediction",
+      "abstract": "We benchmark tree ensembles on 24 tabular datasets and analyze the effect of hyperparameters on generalization."
+    },
+    {
+      "id": "ml-03",
+      "expected": "Machine Learning",
+      "difficulty": "hard",
+      "title": "Federated Learning with Differential Privacy: Convergence Analysis",
+      "abstract": "The paper derives convergence bounds for federated averaging under client-level differential privacy constraints."
+    },
+    {
+      "id": "ml-04",
+      "expected": "Machine Learning",
+      "difficulty": "medium",
+      "title": "Hyperparameter Optimization for Support Vector Machines Using Bayesian Optimization",
+      "abstract": "A Gaussian-process surrogate is used to tune kernel parameters and regularization on several classification benchmarks."
+    },
+    {
+      "id": "ds-01",
+      "expected": "Data Science",
+      "difficulty": "medium",
+      "title": "A Reproducible Pipeline for Cleaning and Integrating Heterogeneous Research Data",
+      "abstract": "The study presents a workflow for schema matching, missing-value imputation, and provenance tracking across institutional datasets."
+    },
+    {
+      "id": "ds-02",
+      "expected": "Data Science",
+      "difficulty": "medium",
+      "title": "Interactive Dashboards for Exploratory Analysis of University Enrollment Data",
+      "abstract": "We describe the design of visual analytics dashboards that support cohort comparison and trend exploration."
+    },
+    {
+      "id": "ds-03",
+      "expected": "Data Science",
+      "difficulty": "hard",
+      "title": "Feature Stores and Data Versioning in Production Analytics Workflows",
+      "abstract": "The paper examines reproducibility, lineage, and serving latency in enterprise feature-store architectures."
+    },
+    {
+      "id": "ds-04",
+      "expected": "Data Science",
+      "difficulty": "hard",
+      "title": "An End-to-End Analytics Pipeline for Retail Sales Forecasting",
+      "abstract": "We combine ingestion, feature engineering, model monitoring, and dashboarding to support weekly demand planning."
+    },
+    {
+      "id": "cv-01",
+      "expected": "Computer Vision",
+      "difficulty": "easy",
+      "title": "Self-Supervised Pretraining for Fine-Grained Image Classification",
+      "abstract": "Contrastive and masked-image objectives are evaluated on fine-grained bird and plant recognition benchmarks."
+    },
+    {
+      "id": "cv-02",
+      "expected": "Computer Vision",
+      "difficulty": "medium",
+      "title": "Monocular Depth Estimation for Indoor Scene Reconstruction",
+      "abstract": "A depth network is trained with geometric consistency losses and evaluated on indoor RGB-D datasets."
+    },
+    {
+      "id": "cv-03",
+      "expected": "Computer Vision",
+      "difficulty": "medium",
+      "title": "Video Action Recognition Using Spatiotemporal Transformers",
+      "abstract": "We propose a factorized attention architecture for recognizing human actions in untrimmed video."
+    },
+    {
+      "id": "cv-04",
+      "expected": "Computer Vision",
+      "difficulty": "hard",
+      "title": "Perceptual Image Quality Assessment for Smartphone Photography",
+      "abstract": "The paper predicts human quality ratings from image statistics and learned features to guide camera tuning."
+    },
+    {
+      "id": "nlp-01",
+      "expected": "Natural Language Processing",
+      "difficulty": "easy",
+      "title": "Low-Resource Machine Translation for Regional Languages",
+      "abstract": "We explore transfer learning and back-translation for translating between Indonesian and local languages."
+    },
+    {
+      "id": "nlp-02",
+      "expected": "Natural Language Processing",
+      "difficulty": "medium",
+      "title": "Aspect-Based Sentiment Analysis of Product Reviews",
+      "abstract": "A span-based model extracts opinion targets and predicts polarity for each aspect in customer reviews."
+    },
+    {
+      "id": "nlp-03",
+      "expected": "Natural Language Processing",
+      "difficulty": "hard",
+      "title": "Retrieval-Augmented Generation for Academic Question Answering",
+      "abstract": "The system combines dense retrieval with a language model to answer questions over scholarly abstracts."
+    },
+    {
+      "id": "nlp-04",
+      "expected": "Natural Language Processing",
+      "difficulty": "medium",
+      "title": "Automatic Speech Recognition for Code-Switched Speech",
+      "abstract": "We train an end-to-end acoustic model that handles frequent language switching in bilingual conversations."
+    },
+    {
+      "id": "rob-01",
+      "expected": "Robotics",
+      "difficulty": "medium",
+      "title": "Whole-Body Control of a Quadruped Robot on Uneven Terrain",
+      "abstract": "A model-predictive controller coordinates leg trajectories and body posture for stable locomotion."
+    },
+    {
+      "id": "rob-02",
+      "expected": "Robotics",
+      "difficulty": "medium",
+      "title": "Grasp Planning with Tactile Feedback for Dexterous Manipulation",
+      "abstract": "The planner selects contact points and adjusts grip force using learned tactile representations."
+    },
+    {
+      "id": "rob-03",
+      "expected": "Robotics",
+      "difficulty": "easy",
+      "title": "Multi-Robot Path Planning in Warehouse Environments",
+      "abstract": "We present a decentralized planner that avoids collisions while minimizing delivery time."
+    },
+    {
+      "id": "rob-04",
+      "expected": "Robotics",
+      "difficulty": "hard",
+      "title": "Sim-to-Real Transfer for Autonomous Drone Navigation",
+      "abstract": "Policies trained in photorealistic simulation are transferred to a physical quadrotor with domain randomization."
+    },
+    {
+      "id": "cyb-01",
+      "expected": "Cybersecurity",
+      "difficulty": "easy",
+      "title": "Ransomware Detection Using Behavioral Analysis of File System Events",
+      "abstract": "The detector flags encryption bursts and suspicious process behavior before files are exfiltrated."
+    },
+    {
+      "id": "cyb-02",
+      "expected": "Cybersecurity",
+      "difficulty": "hard",
+      "title": "Side-Channel Attacks on Post-Quantum Key Encapsulation",
+      "abstract": "We demonstrate timing and power analysis attacks against lattice-based key exchange implementations."
+    },
+    {
+      "id": "cyb-03",
+      "expected": "Cybersecurity",
+      "difficulty": "medium",
+      "title": "A Systematic Review of Zero Trust Architecture Deployment",
+      "abstract": "The review synthesizes identity, segmentation, and continuous-verification practices across enterprises."
+    },
+    {
+      "id": "cyb-04",
+      "expected": "Cybersecurity",
+      "difficulty": "easy",
+      "title": "Analisis Kerentanan Aplikasi Web terhadap Serangan SQL Injection",
+      "abstract": "Penelitian menguji celah validasi input dan menyusun rekomendasi mitigasi untuk aplikasi berbasis PHP."
+    },
+    {
+      "id": "cloud-01",
+      "expected": "Cloud Computing",
+      "difficulty": "medium",
+      "title": "Serverless Cold Start Mitigation via Predictive Container Warm Pools",
+      "abstract": "A workload predictor pre-warms function containers to reduce tail latency in serverless platforms."
+    },
+    {
+      "id": "cloud-02",
+      "expected": "Cloud Computing",
+      "difficulty": "medium",
+      "title": "Cost-Aware Autoscaling for Microservices in Kubernetes",
+      "abstract": "The controller balances response time and resource cost using workload forecasts and horizontal scaling."
+    },
+    {
+      "id": "cloud-03",
+      "expected": "Cloud Computing",
+      "difficulty": "hard",
+      "title": "Multi-Cloud Data Placement Under Latency and Sovereignty Constraints",
+      "abstract": "We formulate placement as an optimization problem and evaluate it across three public cloud providers."
+    },
+    {
+      "id": "cloud-04",
+      "expected": "Cloud Computing",
+      "difficulty": "hard",
+      "title": "Energy-Efficient Virtual Machine Consolidation in Data Centers",
+      "abstract": "A migration-aware scheduler reduces power consumption while maintaining service-level objectives."
+    },
+    {
+      "id": "iot-01",
+      "expected": "Internet of Things",
+      "difficulty": "medium",
+      "title": "LoRaWAN-Based Soil Moisture Monitoring for Precision Agriculture",
+      "abstract": "Low-power sensor nodes transmit field measurements to a gateway for irrigation scheduling."
+    },
+    {
+      "id": "iot-02",
+      "expected": "Internet of Things",
+      "difficulty": "hard",
+      "title": "Edge Computing for Real-Time Anomaly Detection in Industrial Sensors",
+      "abstract": "An embedded gateway runs lightweight models on vibration streams to detect machine faults locally."
+    },
+    {
+      "id": "iot-03",
+      "expected": "Internet of Things",
+      "difficulty": "medium",
+      "title": "A Smart Home Energy Management System Using Zigbee Devices",
+      "abstract": "The system coordinates appliances and sensors to shift load and reduce peak electricity demand."
+    },
+    {
+      "id": "iot-04",
+      "expected": "Internet of Things",
+      "difficulty": "hard",
+      "title": "Wearable Sensor Networks for Continuous Vital Sign Monitoring",
+      "abstract": "Body-worn devices stream heart rate and oxygen saturation to a mobile application for early warning."
+    },
+    {
+      "id": "bc-01",
+      "expected": "Blockchain",
+      "difficulty": "medium",
+      "title": "Smart Contract Verification for Decentralized Finance Protocols",
+      "abstract": "We apply formal methods to detect reentrancy and arithmetic vulnerabilities in deployed contracts."
+    },
+    {
+      "id": "bc-02",
+      "expected": "Blockchain",
+      "difficulty": "medium",
+      "title": "A Consensus Protocol for Permissioned Supply-Chain Ledgers",
+      "abstract": "The paper designs a Byzantine fault-tolerant protocol with finality guarantees for consortium networks."
+    },
+    {
+      "id": "bc-03",
+      "expected": "Blockchain",
+      "difficulty": "hard",
+      "title": "Tokenization of Academic Credentials on Distributed Ledgers",
+      "abstract": "Universities issue verifiable diplomas as signed tokens that employers can validate without a central registry."
+    },
+    {
+      "id": "bc-04",
+      "expected": "Blockchain",
+      "difficulty": "medium",
+      "title": "Scalability of Sharded Blockchain Architectures",
+      "abstract": "We analyze cross-shard communication overhead and throughput under varying validator counts."
+    },
+    {
+      "id": "qc-01",
+      "expected": "Quantum Computing",
+      "difficulty": "medium",
+      "title": "Error Mitigation for Near-Term Quantum Circuits",
+      "abstract": "Zero-noise extrapolation and probabilistic error cancellation are compared on superconducting devices."
+    },
+    {
+      "id": "qc-02",
+      "expected": "Quantum Computing",
+      "difficulty": "hard",
+      "title": "Variational Quantum Algorithms for Molecular Simulation",
+      "abstract": "We study ansatz design and optimization landscapes for estimating ground-state energies."
+    },
+    {
+      "id": "qc-03",
+      "expected": "Quantum Computing",
+      "difficulty": "medium",
+      "title": "Topological Qubits and Fault-Tolerant Quantum Gates",
+      "abstract": "The paper reviews anyonic braiding and error-correcting codes for scalable quantum processors."
+    },
+    {
+      "id": "qc-04",
+      "expected": "Quantum Computing",
+      "difficulty": "hard",
+      "title": "Benchmarking Quantum Annealers on Combinatorial Optimization",
+      "abstract": "Embedding strategies and annealing schedules are evaluated on instances of max-cut and graph coloring."
+    },
+    {
+      "id": "bio-01",
+      "expected": "Bioinformatics",
+      "difficulty": "medium",
+      "title": "Single-Cell RNA Sequencing Reveals Tumor Heterogeneity",
+      "abstract": "Clustering and trajectory inference identify distinct malignant subpopulations in breast cancer samples."
+    },
+    {
+      "id": "bio-02",
+      "expected": "Bioinformatics",
+      "difficulty": "hard",
+      "title": "Genome-Wide Association Study of Drought Tolerance in Rice",
+      "abstract": "We combine genotyping data with phenotype records to identify candidate loci associated with yield under stress."
+    },
+    {
+      "id": "bio-03",
+      "expected": "Bioinformatics",
+      "difficulty": "hard",
+      "title": "Protein Structure Prediction with Graph Neural Networks",
+      "abstract": "A geometric deep learning model predicts residue contacts and tertiary structure from amino-acid sequences."
+    },
+    {
+      "id": "bio-04",
+      "expected": "Bioinformatics",
+      "difficulty": "medium",
+      "title": "Metagenomic Profiling of Gut Microbiomes",
+      "abstract": "Shotgun sequencing and taxonomic annotation are used to compare microbial communities across cohorts."
+    },
+    {
+      "id": "med-01",
+      "expected": "Medical Imaging",
+      "difficulty": "easy",
+      "title": "Automated Segmentation of Brain Tumors in MRI",
+      "abstract": "A U-Net variant delineates enhancing tumor, edema, and necrotic tissue on multi-modal scans."
+    },
+    {
+      "id": "med-02",
+      "expected": "Medical Imaging",
+      "difficulty": "hard",
+      "title": "Radiomics for Predicting Treatment Response in Lung Cancer",
+      "abstract": "Texture features extracted from CT scans are associated with response to immunotherapy."
+    },
+    {
+      "id": "med-03",
+      "expected": "Medical Imaging",
+      "difficulty": "hard",
+      "title": "Low-Dose CT Denoising with Diffusion Models",
+      "abstract": "A generative model reconstructs diagnostic-quality images from reduced-radiation acquisitions."
+    },
+    {
+      "id": "med-04",
+      "expected": "Medical Imaging",
+      "difficulty": "medium",
+      "title": "Deteksi Retinopati Diabetik dari Citra Fundus",
+      "abstract": "Model convolutional neural network mengklasifikasikan tingkat keparahan retinopati pada citra fundus retina."
+    },
+    {
+      "id": "hi-01",
+      "expected": "Health Informatics",
+      "difficulty": "medium",
+      "title": "Integrating Electronic Health Records Across Regional Hospitals",
+      "abstract": "The study designs interoperability services and a master patient index for fragmented clinical systems."
+    },
+    {
+      "id": "hi-02",
+      "expected": "Health Informatics",
+      "difficulty": "medium",
+      "title": "A Telemedicine Platform for Rural Primary Care",
+      "abstract": "We evaluate workflow integration, referral pathways, and clinician adoption of a remote consultation system."
+    },
+    {
+      "id": "hi-03",
+      "expected": "Health Informatics",
+      "difficulty": "hard",
+      "title": "Clinical Decision Support for Medication Reconciliation",
+      "abstract": "The system flags drug interactions and discrepancies by combining hospital records with pharmacy data."
+    },
+    {
+      "id": "hi-04",
+      "expected": "Health Informatics",
+      "difficulty": "hard",
+      "title": "Predicting Hospital Readmission from Administrative Claims Data",
+      "abstract": "Risk scores are deployed in a care-management workflow to prioritize post-discharge follow-up."
+    },
+    {
+      "id": "env-01",
+      "expected": "Environmental Science",
+      "difficulty": "medium",
+      "title": "Microplastic Accumulation in Coastal Sediments",
+      "abstract": "Sediment cores are analyzed to quantify polymer types and accumulation rates near urban estuaries."
+    },
+    {
+      "id": "env-02",
+      "expected": "Environmental Science",
+      "difficulty": "medium",
+      "title": "Assessing Drought Risk Under Climate Change Scenarios",
+      "abstract": "Regional climate projections are downscaled to estimate future water deficits and agricultural exposure."
+    },
+    {
+      "id": "env-03",
+      "expected": "Environmental Science",
+      "difficulty": "hard",
+      "title": "Life Cycle Assessment of Municipal Waste Management",
+      "abstract": "The study compares landfill, composting, and incineration pathways in terms of emissions and energy use."
+    },
+    {
+      "id": "env-04",
+      "expected": "Environmental Science",
+      "difficulty": "medium",
+      "title": "Restoring Peatland Ecosystems to Reduce Carbon Emissions",
+      "abstract": "Rewetting experiments and carbon-flux measurements are used to evaluate restoration outcomes."
+    },
+    {
+      "id": "phy-01",
+      "expected": "Physics",
+      "difficulty": "medium",
+      "title": "Anomalous Hall Effect in Two-Dimensional Magnets",
+      "abstract": "Transport measurements reveal topological contributions to the Hall response in van der Waals crystals."
+    },
+    {
+      "id": "phy-02",
+      "expected": "Physics",
+      "difficulty": "medium",
+      "title": "Gravitational Wave Signals from Binary Neutron Star Mergers",
+      "abstract": "Waveform models are compared with detector data to constrain the equation of state of dense matter."
+    },
+    {
+      "id": "phy-03",
+      "expected": "Physics",
+      "difficulty": "hard",
+      "title": "Ultrafast Laser Spectroscopy of Perovskite Thin Films",
+      "abstract": "Time-resolved photoluminescence probes charge-carrier dynamics on femtosecond timescales."
+    },
+    {
+      "id": "phy-04",
+      "expected": "Physics",
+      "difficulty": "hard",
+      "title": "Measurement of Neutrino Oscillation Parameters",
+      "abstract": "The analysis combines disappearance and appearance channels to constrain mixing angles and mass splittings."
+    },
+    {
+      "id": "chem-01",
+      "expected": "Chemistry",
+      "difficulty": "medium",
+      "title": "Synthesis of Biodegradable Polymers from Lactic Acid",
+      "abstract": "Ring-opening polymerization is optimized to control molecular weight and degradation rate."
+    },
+    {
+      "id": "chem-02",
+      "expected": "Chemistry",
+      "difficulty": "hard",
+      "title": "Computational Study of Reaction Mechanisms in Organocatalysis",
+      "abstract": "Density functional theory is used to map transition states and selectivity-determining steps."
+    },
+    {
+      "id": "chem-03",
+      "expected": "Chemistry",
+      "difficulty": "hard",
+      "title": "Electrochemical Storage in Sodium-Ion Battery Electrolytes",
+      "abstract": "Solvation structure and interfacial stability are correlated with cycling performance."
+    },
+    {
+      "id": "chem-04",
+      "expected": "Chemistry",
+      "difficulty": "medium",
+      "title": "Surface Functionalization of Metal-Organic Frameworks for Gas Adsorption",
+      "abstract": "Ligand modifications are screened to improve carbon dioxide uptake and selectivity."
+    },
+    {
+      "id": "math-01",
+      "expected": "Mathematics",
+      "difficulty": "hard",
+      "title": "A New Proof of the Riemann Hypothesis for Function Fields",
+      "abstract": "The paper develops an algebraic-geometry argument relating zeta zeros to intersection numbers."
+    },
+    {
+      "id": "math-02",
+      "expected": "Mathematics",
+      "difficulty": "medium",
+      "title": "Spectral Properties of Random Matrices",
+      "abstract": "We establish concentration bounds for eigenvalues of Wigner matrices with heavy-tailed entries."
+    },
+    {
+      "id": "math-03",
+      "expected": "Mathematics",
+      "difficulty": "medium",
+      "title": "Numerical Methods for Fractional Differential Equations",
+      "abstract": "Finite-difference schemes are analyzed for stability and convergence under non-smooth initial data."
+    },
+    {
+      "id": "math-04",
+      "expected": "Mathematics",
+      "difficulty": "medium",
+      "title": "Graph Coloring Bounds via Probabilistic Combinatorics",
+      "abstract": "The Lovasz local lemma is applied to improve chromatic-number bounds for sparse random graphs."
+    },
+    {
+      "id": "eng-01",
+      "expected": "Engineering",
+      "difficulty": "medium",
+      "title": "Seismic Retrofitting of Reinforced Concrete Bridges",
+      "abstract": "Fibre-reinforced jackets and isolation bearings are evaluated through shake-table testing."
+    },
+    {
+      "id": "eng-02",
+      "expected": "Engineering",
+      "difficulty": "medium",
+      "title": "Thermal Management of Lithium-Ion Battery Packs in Electric Vehicles",
+      "abstract": "A liquid-cooling design is optimized to limit temperature gradients during fast charging."
+    },
+    {
+      "id": "eng-03",
+      "expected": "Engineering",
+      "difficulty": "medium",
+      "title": "Additive Manufacturing of Titanium Alloy Components",
+      "abstract": "Process parameters are related to porosity and fatigue life in laser powder-bed fusion."
+    },
+    {
+      "id": "eng-04",
+      "expected": "Engineering",
+      "difficulty": "hard",
+      "title": "Design of a Low-Noise Amplifier for 5G Receivers",
+      "abstract": "Circuit topology and impedance matching are optimized for gain, bandwidth, and noise figure."
+    },
+    {
+      "id": "eco-01",
+      "expected": "Economics",
+      "difficulty": "medium",
+      "title": "Monetary Policy Transmission in Emerging Markets",
+      "abstract": "Panel estimates examine how policy rates affect credit growth and inflation expectations."
+    },
+    {
+      "id": "eco-02",
+      "expected": "Economics",
+      "difficulty": "medium",
+      "title": "The Impact of Minimum Wage on Youth Employment",
+      "abstract": "Difference-in-differences estimates exploit regional variation in wage floors."
+    },
+    {
+      "id": "eco-03",
+      "expected": "Economics",
+      "difficulty": "hard",
+      "title": "Household Debt and Consumption Smoothing During Recessions",
+      "abstract": "Survey data are used to estimate how leverage constrains spending after income shocks."
+    },
+    {
+      "id": "eco-04",
+      "expected": "Economics",
+      "difficulty": "hard",
+      "title": "Estimating the Returns to Vocational Education Using Panel Data",
+      "abstract": "We compare earnings trajectories of vocational and general secondary graduates over ten years."
+    },
+    {
+      "id": "soc-01",
+      "expected": "Social Science",
+      "difficulty": "medium",
+      "title": "Social Capital and Disaster Recovery in Urban Communities",
+      "abstract": "Ethnographic fieldwork examines how neighborhood networks shape access to relief and rebuilding."
+    },
+    {
+      "id": "soc-02",
+      "expected": "Social Science",
+      "difficulty": "medium",
+      "title": "Digital Activism and Political Participation Among Youth",
+      "abstract": "The study analyzes how online campaigns translate into offline civic engagement."
+    },
+    {
+      "id": "soc-03",
+      "expected": "Social Science",
+      "difficulty": "medium",
+      "title": "Ethnographic Study of Migrant Labor Networks",
+      "abstract": "Interviews and participant observation trace recruitment chains and remittance practices."
+    },
+    {
+      "id": "soc-04",
+      "expected": "Social Science",
+      "difficulty": "hard",
+      "title": "Media Framing of Climate Protest Movements",
+      "abstract": "A content analysis compares newspaper coverage and the construction of protest legitimacy."
+    },
+    {
+      "id": "law-01",
+      "expected": "Law",
+      "difficulty": "medium",
+      "title": "Constitutional Review of Emergency Powers",
+      "abstract": "The article examines judicial standards for reviewing executive measures during public emergencies."
+    },
+    {
+      "id": "law-02",
+      "expected": "Law",
+      "difficulty": "hard",
+      "title": "Regulating Algorithmic Decision-Making Under Data Protection Law",
+      "abstract": "The paper analyzes transparency, explainability, and redress obligations for automated decisions."
+    },
+    {
+      "id": "law-03",
+      "expected": "Law",
+      "difficulty": "medium",
+      "title": "Hukum Adat dan Penyelesaian Sengketa Tanah di Indonesia",
+      "abstract": "Penelitian mengkaji pengakuan hukum adat dan mekanisme mediasi dalam sengketa kepemilikan tanah."
+    },
+    {
+      "id": "law-04",
+      "expected": "Law",
+      "difficulty": "hard",
+      "title": "Liability for Autonomous Vehicle Accidents",
+      "abstract": "The article compares negligence, product liability, and strict liability frameworks for automated driving."
+    },
+    {
+      "id": "edu-01",
+      "expected": "Education",
+      "difficulty": "medium",
+      "title": "Project-Based Learning in Secondary Mathematics Classrooms",
+      "abstract": "A quasi-experimental study measures problem-solving gains and student engagement."
+    },
+    {
+      "id": "edu-02",
+      "expected": "Education",
+      "difficulty": "medium",
+      "title": "Teacher Feedback and Student Engagement in Online Courses",
+      "abstract": "The study codes feedback episodes and relates them to participation and completion rates."
+    },
+    {
+      "id": "edu-03",
+      "expected": "Education",
+      "difficulty": "medium",
+      "title": "Curriculum Reform for Vocational High Schools",
+      "abstract": "Policy documents and interviews are analyzed to understand alignment with industry needs."
+    },
+    {
+      "id": "edu-04",
+      "expected": "Education",
+      "difficulty": "hard",
+      "title": "Assessment Literacy Among Pre-Service Teachers",
+      "abstract": "A survey and portfolio analysis examine how teacher candidates interpret and use assessment evidence."
+    },
+    {
+      "id": "psy-01",
+      "expected": "Psychology",
+      "difficulty": "medium",
+      "title": "Cognitive Load and Multitasking Performance",
+      "abstract": "Reaction-time experiments test how working-memory demand affects task switching."
+    },
+    {
+      "id": "psy-02",
+      "expected": "Psychology",
+      "difficulty": "medium",
+      "title": "Adolescent Social Media Use and Mental Health",
+      "abstract": "Longitudinal survey data are used to examine associations with anxiety and sleep quality."
+    },
+    {
+      "id": "psy-03",
+      "expected": "Psychology",
+      "difficulty": "hard",
+      "title": "Implicit Bias in Hiring Decisions",
+      "abstract": "Experimental vignettes measure the influence of automatic stereotypes on candidate evaluation."
+    },
+    {
+      "id": "psy-04",
+      "expected": "Psychology",
+      "difficulty": "medium",
+      "title": "Sleep Quality and Emotional Regulation",
+      "abstract": "Diary and physiological data are analyzed to test links between sleep disruption and affect regulation."
+    },
+    {
+      "id": "lit-01",
+      "expected": "Literature",
+      "difficulty": "medium",
+      "title": "Postcolonial Ecocriticism in Contemporary Indonesian Novels",
+      "abstract": "The study reads representations of land, water, and displacement in three contemporary novels."
+    },
+    {
+      "id": "lit-02",
+      "expected": "Literature",
+      "difficulty": "medium",
+      "title": "Narrative Structure in Virginia Woolf's Late Fiction",
+      "abstract": "Close reading and narratology are used to analyze temporal shifts and interior monologue."
+    },
+    {
+      "id": "lit-03",
+      "expected": "Literature",
+      "difficulty": "hard",
+      "title": "Translation and Cultural Identity in Poetry",
+      "abstract": "Comparative close readings examine how metaphor and rhythm shift across language versions."
+    },
+    {
+      "id": "lit-04",
+      "expected": "Literature",
+      "difficulty": "medium",
+      "title": "The Gothic Tradition in Southeast Asian Short Stories",
+      "abstract": "The article traces supernatural motifs and their adaptation to local historical contexts."
+    },
+    {
+      "id": "his-01",
+      "expected": "History",
+      "difficulty": "medium",
+      "title": "Maritime Trade and Port Cities in the Malay Archipelago, 1500-1700",
+      "abstract": "Customs records and travel accounts are used to reconstruct commercial networks."
+    },
+    {
+      "id": "his-02",
+      "expected": "History",
+      "difficulty": "medium",
+      "title": "Cold War Propaganda and Cultural Diplomacy in Asia",
+      "abstract": "Archival materials from exhibitions and radio broadcasts reveal competing influence strategies."
+    },
+    {
+      "id": "his-03",
+      "expected": "History",
+      "difficulty": "medium",
+      "title": "Labor Movements in Colonial Plantations",
+      "abstract": "The study traces strikes, union formation, and state repression in the early twentieth century."
+    },
+    {
+      "id": "his-04",
+      "expected": "History",
+      "difficulty": "hard",
+      "title": "Historiography of the 1965 Indonesian Transition",
+      "abstract": "The article compares competing accounts of political violence and their archival foundations."
+    },
+    {
+      "id": "phi-01",
+      "expected": "Philosophy",
+      "difficulty": "hard",
+      "title": "Epistemic Injustice in Algorithmic Decision Systems",
+      "abstract": "The paper develops a philosophical account of testimonial and hermeneutical harms in automated scoring."
+    },
+    {
+      "id": "phi-02",
+      "expected": "Philosophy",
+      "difficulty": "medium",
+      "title": "Kant's Concept of Autonomy Reconsidered",
+      "abstract": "A close reading of the categorical imperative distinguishes moral autonomy from mere self-direction."
+    },
+    {
+      "id": "phi-03",
+      "expected": "Philosophy",
+      "difficulty": "medium",
+      "title": "The Ethics of Human Enhancement",
+      "abstract": "The article weighs arguments about dignity, fairness, and the limits of technological modification."
+    },
+    {
+      "id": "phi-04",
+      "expected": "Philosophy",
+      "difficulty": "hard",
+      "title": "Phenomenology of Embodied Perception",
+      "abstract": "The study examines Merleau-Ponty's account of the lived body and its relation to perceptual experience."
+    },
+    {
+      "id": "rel-01",
+      "expected": "Religion",
+      "difficulty": "medium",
+      "title": "Theology of Liberation in Latin America",
+      "abstract": "The article traces the movement's exegesis, social commitments, and institutional reception."
+    },
+    {
+      "id": "rel-02",
+      "expected": "Religion",
+      "difficulty": "medium",
+      "title": "Hadith Transmission Networks in the Classical Period",
+      "abstract": "Prosopographical analysis maps chains of narrators and centers of scholarly exchange."
+    },
+    {
+      "id": "rel-03",
+      "expected": "Religion",
+      "difficulty": "hard",
+      "title": "Religious Pluralism in Contemporary Indonesia",
+      "abstract": "The study examines interfaith dialogue, legal recognition, and everyday coexistence."
+    },
+    {
+      "id": "rel-04",
+      "expected": "Religion",
+      "difficulty": "medium",
+      "title": "Ritual Practice and Pilgrimage in Medieval Buddhism",
+      "abstract": "Textual and archaeological evidence are combined to interpret devotional travel and relic veneration."
+    },
+    {
+      "id": "art-01",
+      "expected": "Arts",
+      "difficulty": "medium",
+      "title": "Improvisation and Form in Contemporary Jazz Composition",
+      "abstract": "The analysis combines transcription and interviews to study how improvisers negotiate structural boundaries."
+    },
+    {
+      "id": "art-02",
+      "expected": "Arts",
+      "difficulty": "medium",
+      "title": "The Aesthetics of Installation Art in Public Spaces",
+      "abstract": "The article examines audience interaction and spatial politics in site-specific installations."
+    },
+    {
+      "id": "art-03",
+      "expected": "Arts",
+      "difficulty": "medium",
+      "title": "Costume Design and Cultural Representation in Theater",
+      "abstract": "The study analyzes design choices and their role in staging identity and historical memory."
+    },
+    {
+      "id": "art-04",
+      "expected": "Arts",
+      "difficulty": "hard",
+      "title": "Digital Animation Techniques in Independent Cinema",
+      "abstract": "The article discusses hybrid workflows, visual style, and production constraints in small studios."
+    },
+    {
+      "id": "oth-01",
+      "expected": "Other",
+      "difficulty": "hard",
+      "title": "Interdisciplinary Perspectives on Time: From Physics to Anthropology",
+      "abstract": "The volume compares measurement, experience, and social organization of time across disciplines."
+    },
+    {
+      "id": "oth-02",
+      "expected": "Other",
+      "difficulty": "medium",
+      "title": "A Glossary of Technical Terms for Scientific Editing",
+      "abstract": "The reference work defines terminology and style conventions for manuscript preparation."
+    },
+    {
+      "id": "oth-03",
+      "expected": "Other",
+      "difficulty": "medium",
+      "title": "Report on University Infrastructure Maintenance and Facility Planning",
+      "abstract": "The document summarizes building inspections, maintenance schedules, and budget requirements."
+    },
+    {
+      "id": "oth-04",
+      "expected": "Other",
+      "difficulty": "hard",
+      "title": "General Principles of Crisis Management for Public Institutions",
+      "abstract": "The handbook outlines coordination structures, communication protocols, and post-crisis review."
+    }
+  ]
+}

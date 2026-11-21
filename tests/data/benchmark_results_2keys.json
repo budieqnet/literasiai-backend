@@ -1,0 +1,6838 @@
+{
+  "timestamp": "2026-10-24T02:07:42.178022+00:00",
+  "dataset": {
+    "path": "/root/literasiai/tests/data/classifier_benchmark.json",
+    "samples": 120,
+    "categories": 30
+  },
+  "settings": {
+    "base_url": "https://integrate.api.nvidia.com/v1",
+    "timeout": 60,
+    "max_retries": 2,
+    "delay_s": 1.2,
+    "cache_enabled": false,
+    "api_keys": 2,
+    "key_rotations_observed": 0,
+    "note": "Rerun dengan dua NVIDIA key (primary + rotasi). Tidak ada rotasi terpicu karena tidak ada error 401/403/429 selama run."
+  },
+  "models": {
+    "nvidia/nemotron-3.5-lightning-30b-a3b": {
+      "summary": {
+        "total": 120,
+        "evaluated": 120,
+        "correct": 112,
+        "errors": 0,
+        "accuracy_evaluated": 0.9333,
+        "accuracy_all": 0.9333,
+        "latency": {
+          "count": 120,
+          "avg": 1.934,
+          "median": 1.726,
+          "p95": 3.872,
+          "min": 1.193,
+          "max": 5.048
+        },
+        "per_category": {
+          "Artificial Intelligence": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Arts": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Bioinformatics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Blockchain": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Chemistry": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Cloud Computing": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Computer Vision": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Cybersecurity": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Data Science": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 3,
+            "errors": 0,
+            "accuracy": 0.75
+          },
+          "Economics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 3,
+            "errors": 0,
+            "accuracy": 0.75
+          },
+          "Education": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Engineering": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Environmental Science": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Health Informatics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "History": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 2,
+            "errors": 0,
+            "accuracy": 0.5
+          },
+          "Internet of Things": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Law": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Literature": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Machine Learning": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Mathematics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Medical Imaging": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Natural Language Processing": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Other": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 2,
+            "errors": 0,
+            "accuracy": 0.5
+          },
+          "Philosophy": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Physics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Psychology": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 3,
+            "errors": 0,
+            "accuracy": 0.75
+          },
+          "Quantum Computing": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Religion": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 3,
+            "errors": 0,
+            "accuracy": 0.75
+          },
+          "Robotics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Social Science": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          }
+        },
+        "stopped_early": false,
+        "elapsed_s": 374.92,
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "cache": {
+          "enabled": false,
+          "size": 0,
+          "maxsize": 2048,
+          "ttl": 86400
+        }
+      },
+      "results": [
+        {
+          "id": "ai-01",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "constraint satisfaction",
+            "heuristic search",
+            "course scheduling",
+            "backtracking",
+            "local search",
+            "university timetabling",
+            "optimization",
+            "problem formulation"
+          ],
+          "error": null,
+          "latency_s": 1.361,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ai-02",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "agent architecture",
+            "symbolic planning",
+            "intention reconsideration",
+            "runtime goal selection",
+            "autonomous decision making",
+            "Belief-Desire-Intention",
+            "autonomous agents"
+          ],
+          "error": null,
+          "latency_s": 1.412,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ai-03",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "knowledge representation",
+            "expert system",
+            "forward chaining",
+            "plant disease diagnosis",
+            "rule base",
+            "inference engine",
+            "plant pathology",
+            "agricultural expert system"
+          ],
+          "error": null,
+          "latency_s": 1.717,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ai-04",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "contingent planning",
+            "belief-state search",
+            "partially observable state",
+            "agents",
+            "incomplete information"
+          ],
+          "error": null,
+          "latency_s": 1.292,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ml-01",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "dropout",
+            "weight decay",
+            "data augmentation",
+            "convolutional",
+            "transformer",
+            "low-data regimes",
+            "regularization",
+            "neural networks"
+          ],
+          "error": null,
+          "latency_s": 1.836,
+          "difficulty": "easy"
+        },
+        {
+          "id": "ml-02",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Gradient Boosting",
+            "Random Forests",
+            "tabular prediction",
+            "hyperparameters",
+            "generalization",
+            "tree ensembles",
+            "benchmarking",
+            "datasets"
+          ],
+          "error": null,
+          "latency_s": 1.561,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ml-03",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "federated learning",
+            "differential privacy",
+            "convergence",
+            "client-level privacy",
+            "federated averaging",
+            "privacy constraints",
+            "convergence bounds",
+            "optimization"
+          ],
+          "error": null,
+          "latency_s": 4.687,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ml-04",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Bayesian Optimization",
+            "Gaussian process",
+            "kernel parameters",
+            "regularization",
+            "classification benchmarks",
+            "Support Vector Machines",
+            "hyperparameter tuning",
+            "surrogate model"
+          ],
+          "error": null,
+          "latency_s": 1.622,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ds-01",
+          "expected": "Data Science",
+          "predicted": "Data Science",
+          "correct": true,
+          "confidence": 0.85,
+          "keywords": [
+            "schema matching",
+            "missing-value imputation",
+            "provenance tracking",
+            "heterogeneous research data",
+            "workflow",
+            "pipeline",
+            "data integration",
+            "cleaning"
+          ],
+          "error": null,
+          "latency_s": 4.839,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ds-02",
+          "expected": "Data Science",
+          "predicted": "Data Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "visual analytics",
+            "dashboards",
+            "cohort comparison",
+            "trend exploration",
+            "enrollment data",
+            "university",
+            "exploratory analysis",
+            "data visualization"
+          ],
+          "error": null,
+          "latency_s": 1.568,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ds-03",
+          "expected": "Data Science",
+          "predicted": "Machine Learning",
+          "correct": false,
+          "confidence": 0.92,
+          "keywords": [
+            "feature store",
+            "data versioning",
+            "reproducibility",
+            "lineage",
+            "serving latency",
+            "enterprise architecture",
+            "production analytics",
+            "ML pipeline"
+          ],
+          "error": null,
+          "latency_s": 1.355,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ds-04",
+          "expected": "Data Science",
+          "predicted": "Data Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "retail sales forecasting",
+            "analytics pipeline",
+            "feature engineering",
+            "model monitoring",
+            "dashboarding",
+            "weekly demand planning",
+            "ingestion",
+            "data processing"
+          ],
+          "error": null,
+          "latency_s": 1.876,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cv-01",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "fine-grained",
+            "image classification",
+            "contrastive",
+            "masked-image",
+            "benchmarks",
+            "bird",
+            "plant",
+            "recognition"
+          ],
+          "error": null,
+          "latency_s": 1.375,
+          "difficulty": "easy"
+        },
+        {
+          "id": "cv-02",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "depth estimation",
+            "indoor scene",
+            "reconstruction",
+            "geometric consistency",
+            "RGB-D",
+            "depth network",
+            "monocular",
+            "indoor datasets"
+          ],
+          "error": null,
+          "latency_s": 1.687,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cv-03",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "spatiotemporal",
+            "transformers",
+            "human actions",
+            "untrimmed video",
+            "factorized attention",
+            "recognition",
+            "video understanding",
+            "visual features"
+          ],
+          "error": null,
+          "latency_s": 1.426,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cv-04",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "image quality",
+            "smartphone photography",
+            "human ratings",
+            "image statistics",
+            "learned features",
+            "camera tuning",
+            "perceptual quality",
+            "photo assessment"
+          ],
+          "error": null,
+          "latency_s": 1.453,
+          "difficulty": "hard"
+        },
+        {
+          "id": "nlp-01",
+          "expected": "Natural Language Processing",
+          "predicted": "Natural Language Processing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "transfer learning",
+            "back-translation",
+            "Indonesian",
+            "local languages",
+            "low-resource",
+            "machine translation",
+            "regional languages",
+            "NLP"
+          ],
+          "error": null,
+          "latency_s": 1.509,
+          "difficulty": "easy"
+        },
+        {
+          "id": "nlp-02",
+          "expected": "Natural Language Processing",
+          "predicted": "Natural Language Processing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "aspect-based sentiment analysis",
+            "product reviews",
+            "opinion targets",
+            "polarity prediction",
+            "span-based model",
+            "customer reviews",
+            "sentiment analysis",
+            "NLP"
+          ],
+          "error": null,
+          "latency_s": 2.044,
+          "difficulty": "medium"
+        },
+        {
+          "id": "nlp-03",
+          "expected": "Natural Language Processing",
+          "predicted": "Natural Language Processing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "retrieval-augmented generation",
+            "question answering",
+            "scholarly abstracts",
+            "dense retrieval",
+            "language model",
+            "NLP",
+            "academic QA",
+            "dense passage retrieval"
+          ],
+          "error": null,
+          "latency_s": 1.357,
+          "difficulty": "hard"
+        },
+        {
+          "id": "nlp-04",
+          "expected": "Natural Language Processing",
+          "predicted": "Natural Language Processing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "speech recognition",
+            "code-switched",
+            "bilingual",
+            "acoustic model",
+            "end-to-end",
+            "language switching",
+            "bilingual conversations",
+            "bilingual speech"
+          ],
+          "error": null,
+          "latency_s": 1.568,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rob-01",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "quadruped robot",
+            "whole-body control",
+            "model-predictive controller",
+            "leg trajectories",
+            "body posture",
+            "uneven terrain",
+            "stable locomotion"
+          ],
+          "error": null,
+          "latency_s": 1.495,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rob-02",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "tactile feedback",
+            "dexterous manipulation",
+            "contact points",
+            "grip force",
+            "planner",
+            "manipulation",
+            "feedback",
+            "learning"
+          ],
+          "error": null,
+          "latency_s": 1.626,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rob-03",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "decentralized",
+            "collision avoidance",
+            "delivery time",
+            "warehouse",
+            "multi-robot",
+            "path planning",
+            "autonomous",
+            "planner"
+          ],
+          "error": null,
+          "latency_s": 1.772,
+          "difficulty": "easy"
+        },
+        {
+          "id": "rob-04",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "simulation",
+            "domain randomization",
+            "quadrotor",
+            "transfer learning",
+            "autonomous navigation",
+            "photorealistic",
+            "drone",
+            "policies"
+          ],
+          "error": null,
+          "latency_s": 1.464,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cyb-01",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "ransomware",
+            "behavioral analysis",
+            "file system events",
+            "encryption bursts",
+            "process behavior"
+          ],
+          "error": null,
+          "latency_s": 2.179,
+          "difficulty": "easy"
+        },
+        {
+          "id": "cyb-02",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "side-channel attacks",
+            "post-quantum",
+            "key encapsulation",
+            "lattice-based",
+            "timing analysis",
+            "power analysis",
+            "implementations",
+            "lattice-based key exchange"
+          ],
+          "error": null,
+          "latency_s": 2.229,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cyb-03",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Zero Trust",
+            "identity",
+            "segmentation",
+            "continuous-verification",
+            "enterprises",
+            "deployment",
+            "architecture",
+            "practices"
+          ],
+          "error": null,
+          "latency_s": 1.715,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cyb-04",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "SQL Injection",
+            "Web Application",
+            "Input Validation",
+            "Mitigation",
+            "PHP",
+            "Vulnerability",
+            "Security",
+            "Exploit"
+          ],
+          "error": null,
+          "latency_s": 1.467,
+          "difficulty": "easy"
+        },
+        {
+          "id": "cloud-01",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "serverless",
+            "cold start",
+            "container",
+            "warm pools",
+            "latency",
+            "workload",
+            "function",
+            "predictive"
+          ],
+          "error": null,
+          "latency_s": 1.462,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cloud-02",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "microservices",
+            "Kubernetes",
+            "autoscaling",
+            "workload forecasts",
+            "resource cost",
+            "horizontal scaling",
+            "controller",
+            "response time"
+          ],
+          "error": null,
+          "latency_s": 1.765,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cloud-03",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "multi-cloud",
+            "data placement",
+            "latency",
+            "sovereignty",
+            "cloud providers",
+            "optimization",
+            "public cloud",
+            "constraints"
+          ],
+          "error": null,
+          "latency_s": 1.362,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cloud-04",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.85,
+          "keywords": [
+            "virtual machine",
+            "consolidation",
+            "data center",
+            "migration-aware scheduler",
+            "power consumption",
+            "service-level objectives",
+            "energy-efficient",
+            "migration"
+          ],
+          "error": null,
+          "latency_s": 1.874,
+          "difficulty": "hard"
+        },
+        {
+          "id": "iot-01",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "LoRaWAN",
+            "sensor",
+            "soil moisture",
+            "precision agriculture",
+            "field measurements",
+            "gateway",
+            "low-power",
+            "irrigation scheduling"
+          ],
+          "error": null,
+          "latency_s": 1.767,
+          "difficulty": "medium"
+        },
+        {
+          "id": "iot-02",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "embedded gateway",
+            "vibration streams",
+            "machine faults",
+            "lightweight models",
+            "industrial sensors",
+            "real-time anomaly detection",
+            "local detection",
+            "edge computing"
+          ],
+          "error": null,
+          "latency_s": 1.766,
+          "difficulty": "hard"
+        },
+        {
+          "id": "iot-03",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Smart Home",
+            "Energy Management",
+            "Zigbee",
+            "Load Shifting",
+            "Peak Demand",
+            "Appliances",
+            "Sensors",
+            "IoT Devices"
+          ],
+          "error": null,
+          "latency_s": 2.101,
+          "difficulty": "medium"
+        },
+        {
+          "id": "iot-04",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "wearable",
+            "sensor",
+            "vital sign",
+            "monitoring",
+            "body-worn",
+            "heart rate",
+            "oxygen saturation",
+            "mobile application"
+          ],
+          "error": null,
+          "latency_s": 1.745,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bc-01",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Smart Contract",
+            "Decentralized Finance",
+            "Formal Methods",
+            "Reentrancy",
+            "Arithmetic Vulnerabilities",
+            "Deployed Contracts",
+            "Verification",
+            "Security"
+          ],
+          "error": null,
+          "latency_s": 1.674,
+          "difficulty": "medium"
+        },
+        {
+          "id": "bc-02",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Byzantine fault-tolerant",
+            "finality guarantees",
+            "consortium networks",
+            "permissioned ledgers",
+            "supply-chain",
+            "protocol",
+            "consensus",
+            "distributed ledger"
+          ],
+          "error": null,
+          "latency_s": 1.767,
+          "difficulty": "medium"
+        },
+        {
+          "id": "bc-03",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "distributed ledgers",
+            "verifiable diplomas",
+            "signed tokens",
+            "employers",
+            "central registry"
+          ],
+          "error": null,
+          "latency_s": 1.973,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bc-04",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "sharded blockchain",
+            "cross-shard communication",
+            "throughput",
+            "validator counts",
+            "scalability"
+          ],
+          "error": null,
+          "latency_s": 1.193,
+          "difficulty": "medium"
+        },
+        {
+          "id": "qc-01",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "quantum circuits",
+            "error mitigation",
+            "superconducting devices",
+            "zero-noise extrapolation",
+            "probabilistic error cancellation",
+            "near-term quantum",
+            "quantum error correction",
+            "quantum hardware"
+          ],
+          "error": null,
+          "latency_s": 2.45,
+          "difficulty": "medium"
+        },
+        {
+          "id": "qc-02",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Variational Quantum Algorithms",
+            "Molecular Simulation",
+            "Ansatz Design",
+            "Optimization Landscapes",
+            "Ground-State Energies",
+            "Quantum Chemistry",
+            "Quantum Computing",
+            "Quantum Simulation"
+          ],
+          "error": null,
+          "latency_s": 3.611,
+          "difficulty": "hard"
+        },
+        {
+          "id": "qc-03",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "topological qubits",
+            "fault-tolerant",
+            "quantum gates",
+            "anyonic braiding",
+            "error-correcting codes",
+            "scalable quantum processors",
+            "anyons",
+            "braiding"
+          ],
+          "error": null,
+          "latency_s": 1.971,
+          "difficulty": "medium"
+        },
+        {
+          "id": "qc-04",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "quantum annealers",
+            "combinatorial optimization",
+            "max-cut",
+            "graph coloring",
+            "embedding strategies",
+            "annealing schedules",
+            "quantum optimization",
+            "benchmarking"
+          ],
+          "error": null,
+          "latency_s": 2.077,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bio-01",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Single-Cell RNA Sequencing",
+            "Tumor Heterogeneity",
+            "Clustering",
+            "Trajectory Inference",
+            "Malignant Subpopulations",
+            "Breast Cancer",
+            "Gene Expression",
+            "Cellular Subtypes"
+          ],
+          "error": null,
+          "latency_s": 1.672,
+          "difficulty": "medium"
+        },
+        {
+          "id": "bio-02",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "rice",
+            "drought tolerance",
+            "genome-wide association study",
+            "phenotype",
+            "genotyping",
+            "candidate loci",
+            "yield",
+            "stress"
+          ],
+          "error": null,
+          "latency_s": 1.769,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bio-03",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "protein structure prediction",
+            "graph neural networks",
+            "residue contacts",
+            "tertiary structure",
+            "amino acid sequences",
+            "geometric deep learning",
+            "3D modeling",
+            "structural biology"
+          ],
+          "error": null,
+          "latency_s": 2.075,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bio-04",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "metagenomic",
+            "shotgun sequencing",
+            "taxonomic annotation",
+            "microbial communities",
+            "gut microbiomes",
+            "taxonomy",
+            "profiling",
+            "cohorts"
+          ],
+          "error": null,
+          "latency_s": 2.483,
+          "difficulty": "medium"
+        },
+        {
+          "id": "med-01",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "brain tumor",
+            "MRI",
+            "U-Net",
+            "segmentation",
+            "enhancing tumor",
+            "edema",
+            "necrotic tissue",
+            "multi-modal scans"
+          ],
+          "error": null,
+          "latency_s": 2.082,
+          "difficulty": "easy"
+        },
+        {
+          "id": "med-02",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "radiomics",
+            "CT scans",
+            "texture features",
+            "treatment response",
+            "immunotherapy",
+            "lung cancer",
+            "predictive modeling",
+            "medical imaging"
+          ],
+          "error": null,
+          "latency_s": 1.459,
+          "difficulty": "hard"
+        },
+        {
+          "id": "med-03",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "CT",
+            "denoising",
+            "diffusion",
+            "generative model",
+            "radiation",
+            "diagnostic quality",
+            "low-dose",
+            "image reconstruction"
+          ],
+          "error": null,
+          "latency_s": 1.453,
+          "difficulty": "hard"
+        },
+        {
+          "id": "med-04",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "retinopati",
+            "fundus",
+            "convolutional neural network",
+            "citra medis",
+            "penyakit mata",
+            "deteksi",
+            "klasifikasi",
+            "tingkat keparahan"
+          ],
+          "error": null,
+          "latency_s": 1.776,
+          "difficulty": "medium"
+        },
+        {
+          "id": "hi-01",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Electronic Health Records",
+            "interoperability",
+            "master patient index",
+            "clinical systems",
+            "regional hospitals",
+            "fragmented systems",
+            "interoperability services",
+            "clinical data"
+          ],
+          "error": null,
+          "latency_s": 1.975,
+          "difficulty": "medium"
+        },
+        {
+          "id": "hi-02",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "telemedicine",
+            "rural primary care",
+            "workflow integration",
+            "referral pathways",
+            "clinician adoption",
+            "remote consultation",
+            "platform",
+            "healthcare delivery"
+          ],
+          "error": null,
+          "latency_s": 2.08,
+          "difficulty": "medium"
+        },
+        {
+          "id": "hi-03",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "medication reconciliation",
+            "drug interactions",
+            "discrepancies",
+            "hospital records",
+            "pharmacy data",
+            "clinical decision support",
+            "system integration",
+            "patient safety"
+          ],
+          "error": null,
+          "latency_s": 2.076,
+          "difficulty": "hard"
+        },
+        {
+          "id": "hi-04",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "hospital readmission",
+            "administrative claims",
+            "risk scores",
+            "care-management workflow",
+            "post-discharge follow-up",
+            "predictive modeling",
+            "healthcare data",
+            "clinical prioritization"
+          ],
+          "error": null,
+          "latency_s": 3.097,
+          "difficulty": "hard"
+        },
+        {
+          "id": "env-01",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "microplastic",
+            "coastal",
+            "sediment",
+            "polymer",
+            "accumulation",
+            "urban",
+            "estuary",
+            "quantify"
+          ],
+          "error": null,
+          "latency_s": 1.364,
+          "difficulty": "medium"
+        },
+        {
+          "id": "env-02",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "drought",
+            "climate change",
+            "water deficits",
+            "agricultural exposure",
+            "regional climate projections",
+            "downscaled",
+            "future water deficits",
+            "agricultural risk"
+          ],
+          "error": null,
+          "latency_s": 3.613,
+          "difficulty": "medium"
+        },
+        {
+          "id": "env-03",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Municipal Waste",
+            "Landfill",
+            "Composting",
+            "Incineration",
+            "Emissions",
+            "Energy Use",
+            "Life Cycle Assessment",
+            "Pathways"
+          ],
+          "error": null,
+          "latency_s": 1.665,
+          "difficulty": "hard"
+        },
+        {
+          "id": "env-04",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "peatland",
+            "carbon emissions",
+            "restoration",
+            "rewetting",
+            "carbon flux",
+            "ecosystem",
+            "greenhouse gas",
+            "climate mitigation"
+          ],
+          "error": null,
+          "latency_s": 1.462,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-01",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Anomalous Hall Effect",
+            "Two-Dimensional Magnets",
+            "van der Waals crystals",
+            "topological contributions",
+            "Hall response",
+            "Transport measurements",
+            "Topological",
+            "Magnetism"
+          ],
+          "error": null,
+          "latency_s": 1.596,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-02",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "gravitational waves",
+            "binary neutron star",
+            "mergers",
+            "equation of state",
+            "dense matter",
+            "waveform models",
+            "detector data",
+            "general relativity"
+          ],
+          "error": null,
+          "latency_s": 1.735,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-03",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "ultrafast",
+            "laser",
+            "spectroscopy",
+            "perovskite",
+            "thin films",
+            "charge-carrier",
+            "femtosecond",
+            "photoluminescence"
+          ],
+          "error": null,
+          "latency_s": 1.963,
+          "difficulty": "hard"
+        },
+        {
+          "id": "phy-04",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "neutrino",
+            "oscillation",
+            "mixing angles",
+            "mass splittings",
+            "disappearance",
+            "appearance channels",
+            "particle physics",
+            "fundamental particles"
+          ],
+          "error": null,
+          "latency_s": 1.455,
+          "difficulty": "hard"
+        },
+        {
+          "id": "chem-01",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "biodegradable",
+            "polymers",
+            "lactic acid",
+            "ring-opening polymerization",
+            "molecular weight",
+            "degradation rate",
+            "synthesis",
+            "organic acid"
+          ],
+          "error": null,
+          "latency_s": 1.89,
+          "difficulty": "medium"
+        },
+        {
+          "id": "chem-02",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "organocatalysis",
+            "reaction mechanisms",
+            "transition states",
+            "density functional theory",
+            "selectivity",
+            "computational study",
+            "catalysis",
+            "organic chemistry"
+          ],
+          "error": null,
+          "latency_s": 1.568,
+          "difficulty": "hard"
+        },
+        {
+          "id": "chem-03",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "electrolyte",
+            "sodium-ion",
+            "solvation",
+            "interfacial",
+            "cycling",
+            "performance",
+            "storage",
+            "battery"
+          ],
+          "error": null,
+          "latency_s": 2.38,
+          "difficulty": "hard"
+        },
+        {
+          "id": "chem-04",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Metal-Organic Frameworks",
+            "Gas Adsorption",
+            "Ligand modifications",
+            "Carbon dioxide",
+            "Uptake"
+          ],
+          "error": null,
+          "latency_s": 1.466,
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-01",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Riemann Hypothesis",
+            "function fields",
+            "algebraic geometry",
+            "zeta zeros",
+            "intersection numbers",
+            "algebraic geometry argument",
+            "proof",
+            "zeros"
+          ],
+          "error": null,
+          "latency_s": 1.462,
+          "difficulty": "hard"
+        },
+        {
+          "id": "math-02",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Wigner matrices",
+            "eigenvalues",
+            "concentration bounds",
+            "heavy-tailed entries",
+            "spectral properties",
+            "random matrices",
+            "probability theory",
+            "functional analysis"
+          ],
+          "error": null,
+          "latency_s": 1.416,
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-03",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "fractional differential equations",
+            "finite-difference schemes",
+            "stability",
+            "convergence",
+            "non-smooth initial data",
+            "numerical methods"
+          ],
+          "error": null,
+          "latency_s": 3.863,
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-04",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "graph coloring",
+            "probabilistic combinatorics",
+            "chromatic number",
+            "Lovasz local lemma",
+            "sparse random graphs",
+            "chromatic-number bounds",
+            "probabilistic method"
+          ],
+          "error": null,
+          "latency_s": 1.871,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-01",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "seismic",
+            "retrofitting",
+            "reinforced concrete",
+            "bridges",
+            "isolation bearings",
+            "fibre-reinforced jackets",
+            "shake-table testing",
+            "structural"
+          ],
+          "error": null,
+          "latency_s": 1.667,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-02",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Lithium-Ion Battery",
+            "Thermal Management",
+            "Electric Vehicles",
+            "Liquid Cooling",
+            "Fast Charging",
+            "Temperature Gradients",
+            "Battery Packs",
+            "Optimization"
+          ],
+          "error": null,
+          "latency_s": 5.048,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-03",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "additive manufacturing",
+            "titanium alloy",
+            "laser powder-bed fusion",
+            "porosity",
+            "fatigue life",
+            "process parameters"
+          ],
+          "error": null,
+          "latency_s": 1.768,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-04",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Low-Noise Amplifier",
+            "5G",
+            "RF",
+            "Impedance Matching",
+            "Gain",
+            "Bandwidth",
+            "Noise Figure",
+            "Circuit Topology"
+          ],
+          "error": null,
+          "latency_s": 2.182,
+          "difficulty": "hard"
+        },
+        {
+          "id": "eco-01",
+          "expected": "Economics",
+          "predicted": "Economics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Monetary Policy",
+            "Emerging Markets",
+            "Credit Growth",
+            "Inflation Expectations",
+            "Panel Estimates",
+            "Policy Rates",
+            "Transmission Mechanism",
+            "Financial Markets"
+          ],
+          "error": null,
+          "latency_s": 1.88,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eco-02",
+          "expected": "Economics",
+          "predicted": "Economics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "minimum wage",
+            "youth employment",
+            "difference-in-differences",
+            "wage floors",
+            "regional variation"
+          ],
+          "error": null,
+          "latency_s": 1.461,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eco-03",
+          "expected": "Economics",
+          "predicted": "Economics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "household debt",
+            "consumption smoothing",
+            "recessions",
+            "leverage",
+            "income shocks"
+          ],
+          "error": null,
+          "latency_s": 1.248,
+          "difficulty": "hard"
+        },
+        {
+          "id": "eco-04",
+          "expected": "Economics",
+          "predicted": "Education",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "vocational education",
+            "secondary graduates",
+            "earnings trajectories",
+            "panel data",
+            "comparative analysis",
+            "returns to education",
+            "skill formation",
+            "labor market outcomes"
+          ],
+          "error": null,
+          "latency_s": 1.985,
+          "difficulty": "hard"
+        },
+        {
+          "id": "soc-01",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "social capital",
+            "disaster recovery",
+            "urban communities",
+            "neighborhood networks",
+            "relief",
+            "rebuilding",
+            "ethnographic fieldwork",
+            "access"
+          ],
+          "error": null,
+          "latency_s": 1.657,
+          "difficulty": "medium"
+        },
+        {
+          "id": "soc-02",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "digital activism",
+            "political participation",
+            "youth",
+            "online campaigns",
+            "offline civic engagement",
+            "social media",
+            "political efficacy",
+            "citizenship"
+          ],
+          "error": null,
+          "latency_s": 1.664,
+          "difficulty": "medium"
+        },
+        {
+          "id": "soc-03",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "migrant labor",
+            "recruitment",
+            "remittance",
+            "participant observation",
+            "interviews",
+            "social networks",
+            "migration",
+            "ethnography"
+          ],
+          "error": null,
+          "latency_s": 1.568,
+          "difficulty": "medium"
+        },
+        {
+          "id": "soc-04",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "climate protest",
+            "newspaper coverage",
+            "protest legitimacy",
+            "content analysis",
+            "framing",
+            "movements",
+            "media",
+            "construction"
+          ],
+          "error": null,
+          "latency_s": 1.463,
+          "difficulty": "hard"
+        },
+        {
+          "id": "law-01",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "constitutional review",
+            "emergency powers",
+            "judicial standards",
+            "executive measures",
+            "public emergencies"
+          ],
+          "error": null,
+          "latency_s": 2.486,
+          "difficulty": "medium"
+        },
+        {
+          "id": "law-02",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "algorithmic decision-making",
+            "data protection",
+            "transparency",
+            "explainability",
+            "redress",
+            "automated decisions",
+            "data protection law",
+            "regulating AI"
+          ],
+          "error": null,
+          "latency_s": 1.971,
+          "difficulty": "hard"
+        },
+        {
+          "id": "law-03",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "hukum adat",
+            "penyelesaian sengketa",
+            "kepemilikan tanah",
+            "mediasi",
+            "Indonesia"
+          ],
+          "error": null,
+          "latency_s": 1.872,
+          "difficulty": "medium"
+        },
+        {
+          "id": "law-04",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "autonomous vehicle",
+            "accidents",
+            "negligence",
+            "product liability",
+            "strict liability"
+          ],
+          "error": null,
+          "latency_s": 1.363,
+          "difficulty": "hard"
+        },
+        {
+          "id": "edu-01",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Project-Based Learning",
+            "Secondary Mathematics",
+            "Problem-solving",
+            "Student Engagement",
+            "Quasi-experimental Study",
+            "Classroom",
+            "Pedagogy",
+            "Mathematics Education"
+          ],
+          "error": null,
+          "latency_s": 3.302,
+          "difficulty": "medium"
+        },
+        {
+          "id": "edu-02",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "online courses",
+            "teacher feedback",
+            "student engagement",
+            "participation",
+            "completion rates",
+            "feedback episodes"
+          ],
+          "error": null,
+          "latency_s": 1.261,
+          "difficulty": "medium"
+        },
+        {
+          "id": "edu-03",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Curriculum",
+            "Vocational",
+            "High School",
+            "Industry",
+            "Alignment",
+            "Policy",
+            "Reform",
+            "Education"
+          ],
+          "error": null,
+          "latency_s": 1.565,
+          "difficulty": "medium"
+        },
+        {
+          "id": "edu-04",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "assessment literacy",
+            "pre-service teachers",
+            "survey",
+            "portfolio analysis",
+            "teacher candidates",
+            "assessment evidence",
+            "interpretation",
+            "use of assessment"
+          ],
+          "error": null,
+          "latency_s": 1.871,
+          "difficulty": "hard"
+        },
+        {
+          "id": "psy-01",
+          "expected": "Psychology",
+          "predicted": "Psychology",
+          "correct": true,
+          "confidence": 0.85,
+          "keywords": [
+            "cognitive load",
+            "multitasking",
+            "working memory",
+            "reaction time",
+            "task switching",
+            "experiment",
+            "performance",
+            "demand"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "medium"
+        },
+        {
+          "id": "psy-02",
+          "expected": "Psychology",
+          "predicted": "Psychology",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "social media",
+            "adolescent",
+            "mental health",
+            "anxiety",
+            "sleep quality",
+            "longitudinal",
+            "survey",
+            "associations"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "medium"
+        },
+        {
+          "id": "psy-03",
+          "expected": "Psychology",
+          "predicted": "Social Science",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "implicit bias",
+            "hiring decisions",
+            "automatic stereotypes",
+            "candidate evaluation",
+            "experimental vignettes",
+            "hiring"
+          ],
+          "error": null,
+          "latency_s": 1.807,
+          "difficulty": "hard"
+        },
+        {
+          "id": "psy-04",
+          "expected": "Psychology",
+          "predicted": "Psychology",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "sleep quality",
+            "emotional regulation",
+            "affect",
+            "diary",
+            "physiological data",
+            "sleep disruption",
+            "links",
+            "emotion"
+          ],
+          "error": null,
+          "latency_s": 1.527,
+          "difficulty": "medium"
+        },
+        {
+          "id": "lit-01",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Postcolonial",
+            "Ecocriticism",
+            "Indonesian Novels",
+            "Land",
+            "Water",
+            "Displacement"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "medium"
+        },
+        {
+          "id": "lit-02",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Virginia Woolf",
+            "Narrative Structure",
+            "Late Fiction",
+            "temporal shifts",
+            "interior monologue",
+            "narratology",
+            "close reading",
+            "modernist literature"
+          ],
+          "error": null,
+          "latency_s": 1.957,
+          "difficulty": "medium"
+        },
+        {
+          "id": "lit-03",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "translation",
+            "cultural identity",
+            "poetry",
+            "metaphor",
+            "rhythm",
+            "language versions",
+            "comparative",
+            "close reading"
+          ],
+          "error": null,
+          "latency_s": 4.859,
+          "difficulty": "hard"
+        },
+        {
+          "id": "lit-04",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Gothic",
+            "Southeast Asian",
+            "Short Stories",
+            "Supernatural",
+            "Historical Context"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-01",
+          "expected": "History",
+          "predicted": "History",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Maritime Trade",
+            "Port Cities",
+            "Malay Archipelago",
+            "1500-1700",
+            "Customs Records",
+            "Travel Accounts",
+            "Commercial Networks"
+          ],
+          "error": null,
+          "latency_s": 1.977,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-02",
+          "expected": "History",
+          "predicted": "Social Science",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "Cold War",
+            "Propaganda",
+            "Cultural Diplomacy",
+            "Asia",
+            "Archival",
+            "Exhibitions",
+            "Radio Broadcasts",
+            "Influence Strategies"
+          ],
+          "error": null,
+          "latency_s": 1.764,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-03",
+          "expected": "History",
+          "predicted": "Social Science",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "labor",
+            "movements",
+            "colonial",
+            "plantations",
+            "strikes",
+            "union",
+            "state",
+            "repression"
+          ],
+          "error": null,
+          "latency_s": 1.532,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-04",
+          "expected": "History",
+          "predicted": "History",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "1965",
+            "Indonesian Transition",
+            "political violence",
+            "historiography",
+            "archival foundations",
+            "competing accounts"
+          ],
+          "error": null,
+          "latency_s": 3.134,
+          "difficulty": "hard"
+        },
+        {
+          "id": "phi-01",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "testimonial",
+            "hermeneutical",
+            "harms",
+            "algorithmic",
+            "decision",
+            "systems",
+            "epistemic",
+            "injustice"
+          ],
+          "error": null,
+          "latency_s": 1.568,
+          "difficulty": "hard"
+        },
+        {
+          "id": "phi-02",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "autonomy",
+            "categorical imperative",
+            "moral",
+            "self-direction",
+            "reason",
+            "will",
+            "imperative",
+            "autonomous"
+          ],
+          "error": null,
+          "latency_s": 1.77,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phi-03",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "human enhancement",
+            "dignity",
+            "fairness",
+            "technological modification",
+            "limits",
+            "ethics",
+            "technology",
+            "modification"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phi-04",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Merleau-Ponty",
+            "lived body",
+            "perceptual experience",
+            "phenomenology",
+            "embodied perception",
+            "philosophy",
+            "perception",
+            "cognition"
+          ],
+          "error": null,
+          "latency_s": 1.465,
+          "difficulty": "hard"
+        },
+        {
+          "id": "rel-01",
+          "expected": "Religion",
+          "predicted": "Religion",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Liberation Theology",
+            "Latin America",
+            "Exegesis",
+            "Social Commitments",
+            "Institutional Reception"
+          ],
+          "error": null,
+          "latency_s": 1.866,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rel-02",
+          "expected": "Religion",
+          "predicted": "History",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "hadith",
+            "transmission",
+            "narrators",
+            "scholarly",
+            "exchange",
+            "prosopographical",
+            "classical",
+            "period"
+          ],
+          "error": null,
+          "latency_s": 1.365,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rel-03",
+          "expected": "Religion",
+          "predicted": "Religion",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "pluralisme",
+            "agama",
+            "dialog",
+            "keberagaman",
+            "Indonesia",
+            "koexistensi",
+            "interfaith",
+            "hukum"
+          ],
+          "error": null,
+          "latency_s": 1.882,
+          "difficulty": "hard"
+        },
+        {
+          "id": "rel-04",
+          "expected": "Religion",
+          "predicted": "Religion",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Buddhism",
+            "pilgrimage",
+            "relic veneration",
+            "devotional travel",
+            "textual evidence",
+            "archaeological evidence",
+            "medieval",
+            "ritual practice"
+          ],
+          "error": null,
+          "latency_s": 1.549,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-01",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "jazz",
+            "improvisation",
+            "composition",
+            "form",
+            "structural",
+            "boundaries",
+            "transcription",
+            "interviews"
+          ],
+          "error": null,
+          "latency_s": 2.589,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-02",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "installation art",
+            "public spaces",
+            "audience interaction",
+            "spatial politics",
+            "site-specific"
+          ],
+          "error": null,
+          "latency_s": 1.363,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-03",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "costume design",
+            "cultural representation",
+            "theater",
+            "identity",
+            "historical memory",
+            "staging",
+            "design choices"
+          ],
+          "error": null,
+          "latency_s": 1.425,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-04",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "animation",
+            "independent cinema",
+            "hybrid workflows",
+            "visual style",
+            "production constraints",
+            "small studios",
+            "digital techniques"
+          ],
+          "error": null,
+          "latency_s": 1.909,
+          "difficulty": "hard"
+        },
+        {
+          "id": "oth-01",
+          "expected": "Other",
+          "predicted": "Other",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "interdisciplinary",
+            "time",
+            "physics",
+            "anthropology",
+            "measurement",
+            "experience",
+            "social organization",
+            "disciplines"
+          ],
+          "error": null,
+          "latency_s": 1.462,
+          "difficulty": "hard"
+        },
+        {
+          "id": "oth-02",
+          "expected": "Other",
+          "predicted": "Other",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Glossary",
+            "Scientific Editing",
+            "Terminology",
+            "Style Conventions",
+            "Manuscript Preparation",
+            "Reference Work"
+          ],
+          "error": null,
+          "latency_s": 4.125,
+          "difficulty": "medium"
+        },
+        {
+          "id": "oth-03",
+          "expected": "Other",
+          "predicted": "Engineering",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "infrastructure",
+            "maintenance",
+            "facility",
+            "planning",
+            "building",
+            "inspection",
+            "budget",
+            "scheduling"
+          ],
+          "error": null,
+          "latency_s": 2.268,
+          "difficulty": "medium"
+        },
+        {
+          "id": "oth-04",
+          "expected": "Other",
+          "predicted": "Social Science",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "crisis management",
+            "public institutions",
+            "coordination structures",
+            "communication protocols",
+            "post-crisis review",
+            "handbook",
+            "governance",
+            "risk mitigation"
+          ],
+          "error": null,
+          "latency_s": 4.035,
+          "difficulty": "hard"
+        }
+      ]
+    },
+    "nvidia/nemotron-3.5-super-vl-120b-a12b": {
+      "summary": {
+        "total": 120,
+        "evaluated": 119,
+        "correct": 114,
+        "errors": 1,
+        "accuracy_evaluated": 0.958,
+        "accuracy_all": 0.95,
+        "latency": {
+          "count": 119,
+          "avg": 3.201,
+          "median": 1.362,
+          "p95": 12.3,
+          "min": 1.05,
+          "max": 62.966
+        },
+        "per_category": {
+          "Artificial Intelligence": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Arts": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Bioinformatics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Blockchain": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Chemistry": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Cloud Computing": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Computer Vision": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Cybersecurity": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Data Science": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Economics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Education": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Engineering": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Environmental Science": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Health Informatics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "History": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Internet of Things": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Law": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Literature": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Machine Learning": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Mathematics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Medical Imaging": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Natural Language Processing": {
+            "total": 4,
+            "evaluated": 3,
+            "correct": 3,
+            "errors": 1,
+            "accuracy": 1.0
+          },
+          "Other": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 0,
+            "errors": 0,
+            "accuracy": 0.0
+          },
+          "Philosophy": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Physics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Psychology": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Quantum Computing": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Religion": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 3,
+            "errors": 0,
+            "accuracy": 0.75
+          },
+          "Robotics": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          },
+          "Social Science": {
+            "total": 4,
+            "evaluated": 4,
+            "correct": 4,
+            "errors": 0,
+            "accuracy": 1.0
+          }
+        },
+        "stopped_early": false,
+        "elapsed_s": 532.48,
+        "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+        "cache": {
+          "enabled": false,
+          "size": 0,
+          "maxsize": 2048,
+          "ttl": 86400
+        }
+      },
+      "results": [
+        {
+          "id": "ai-01",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "constraint satisfaction",
+            "heuristic search",
+            "university timetabling",
+            "backtracking",
+            "local search",
+            "course scheduling"
+          ],
+          "error": null,
+          "latency_s": 1.228,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ai-02",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "BDI architecture",
+            "autonomous agent",
+            "symbolic planning",
+            "intention reconsideration",
+            "runtime goal selection",
+            "decision making",
+            "knowledge representation",
+            "intelligent agent"
+          ],
+          "error": null,
+          "latency_s": 1.466,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ai-03",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "representasi pengetahuan",
+            "sistem pakar",
+            "basis aturan",
+            "forward chaining",
+            "diagnosis penyakit tanaman",
+            "inferensi",
+            "AI",
+            "pengetahuan"
+          ],
+          "error": null,
+          "latency_s": 1.259,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ai-04",
+          "expected": "Artificial Intelligence",
+          "predicted": "Artificial Intelligence",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "contingent planning",
+            "belief-state search",
+            "partially observable state",
+            "uncertainty",
+            "incomplete information",
+            "intelligent agents",
+            "automated planning",
+            "AI reasoning"
+          ],
+          "error": null,
+          "latency_s": 1.354,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ml-01",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "regularization",
+            "deep neural networks",
+            "dropout",
+            "weight decay",
+            "data augmentation",
+            "low-data regimes",
+            "convolutional models",
+            "transformer models"
+          ],
+          "error": null,
+          "latency_s": 1.356,
+          "difficulty": "easy"
+        },
+        {
+          "id": "ml-02",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Gradient Boosting",
+            "Random Forests",
+            "Tabular Prediction",
+            "Tree Ensembles",
+            "Hyperparameters",
+            "Generalization",
+            "Benchmark",
+            "Model Comparison"
+          ],
+          "error": null,
+          "latency_s": 2.191,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ml-03",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Federated Learning",
+            "Differential Privacy",
+            "Federated Averaging",
+            "Convergence Analysis",
+            "Client-level Privacy"
+          ],
+          "error": null,
+          "latency_s": 1.761,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ml-04",
+          "expected": "Machine Learning",
+          "predicted": "Machine Learning",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Support Vector Machines",
+            "Bayesian Optimization",
+            "Hyperparameter Optimization",
+            "Gaussian Process",
+            "Regularization",
+            "Classification Benchmarks",
+            "Kernel Parameters",
+            "Model Tuning"
+          ],
+          "error": null,
+          "latency_s": 1.398,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ds-01",
+          "expected": "Data Science",
+          "predicted": "Data Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "schema matching",
+            "missing-value imputation",
+            "provenance tracking",
+            "data cleaning",
+            "data integration",
+            "heterogeneous data",
+            "research data",
+            "workflow"
+          ],
+          "error": null,
+          "latency_s": 2.241,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ds-02",
+          "expected": "Data Science",
+          "predicted": "Data Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "visual analytics",
+            "dashboard",
+            "exploratory analysis",
+            "cohort comparison",
+            "trend exploration",
+            "university enrollment",
+            "data visualization",
+            "insight"
+          ],
+          "error": null,
+          "latency_s": 1.26,
+          "difficulty": "medium"
+        },
+        {
+          "id": "ds-03",
+          "expected": "Data Science",
+          "predicted": "Data Science",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "feature store",
+            "data versioning",
+            "reproducibility",
+            "lineage",
+            "serving latency",
+            "production analytics",
+            "enterprise architecture",
+            "data pipeline"
+          ],
+          "error": null,
+          "latency_s": 1.261,
+          "difficulty": "hard"
+        },
+        {
+          "id": "ds-04",
+          "expected": "Data Science",
+          "predicted": "Data Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "analytics pipeline",
+            "retail sales forecasting",
+            "feature engineering",
+            "model monitoring",
+            "dashboarding",
+            "demand planning",
+            "data ingestion",
+            "business analytics"
+          ],
+          "error": null,
+          "latency_s": 1.458,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cv-01",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "self-supervised pretraining",
+            "contrastive learning",
+            "masked-image modeling",
+            "fine-grained image classification",
+            "bird recognition",
+            "plant recognition",
+            "image benchmarks",
+            "visual representation"
+          ],
+          "error": null,
+          "latency_s": 6.583,
+          "difficulty": "easy"
+        },
+        {
+          "id": "cv-02",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "monocular depth estimation",
+            "indoor scene reconstruction",
+            "geometric consistency",
+            "RGB-D datasets",
+            "depth network"
+          ],
+          "error": null,
+          "latency_s": 1.157,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cv-03",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "video action recognition",
+            "spatiotemporal transformers",
+            "factorized attention",
+            "untrimmed video",
+            "human actions"
+          ],
+          "error": null,
+          "latency_s": 1.355,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cv-04",
+          "expected": "Computer Vision",
+          "predicted": "Computer Vision",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "image quality assessment",
+            "smartphone photography",
+            "image statistics",
+            "human quality ratings",
+            "camera tuning",
+            "learned features",
+            "perceptual quality",
+            "image processing"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "hard"
+        },
+        {
+          "id": "nlp-01",
+          "expected": "Natural Language Processing",
+          "predicted": "Natural Language Processing",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "machine translation",
+            "transfer learning",
+            "back-translation",
+            "Indonesian",
+            "regional languages",
+            "low-resource"
+          ],
+          "error": null,
+          "latency_s": 1.573,
+          "difficulty": "easy"
+        },
+        {
+          "id": "nlp-02",
+          "expected": "Natural Language Processing",
+          "predicted": "Natural Language Processing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "aspect-based sentiment analysis",
+            "opinion targets",
+            "polarity",
+            "customer reviews",
+            "span-based model",
+            "text analysis"
+          ],
+          "error": null,
+          "latency_s": 1.152,
+          "difficulty": "medium"
+        },
+        {
+          "id": "nlp-03",
+          "expected": "Natural Language Processing",
+          "predicted": null,
+          "correct": false,
+          "confidence": null,
+          "keywords": [],
+          "error": "Semua percobaan NVIDIA gagal: HTTP 500: {\"message\":\"Failed to generate completions\",\"type\":\"Internal Server Error\",\"code\":500}",
+          "latency_s": 8.733,
+          "difficulty": "hard"
+        },
+        {
+          "id": "nlp-04",
+          "expected": "Natural Language Processing",
+          "predicted": "Natural Language Processing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Automatic Speech Recognition",
+            "Code-Switched Speech",
+            "End-to-end acoustic model",
+            "Bilingual conversations",
+            "Language switching"
+          ],
+          "error": null,
+          "latency_s": 1.152,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rob-01",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "quadruped robot",
+            "whole-body control",
+            "uneven terrain",
+            "model-predictive controller",
+            "leg trajectories",
+            "body posture",
+            "stable locomotion",
+            "autonomous system"
+          ],
+          "error": null,
+          "latency_s": 1.463,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rob-02",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "grasp planning",
+            "tactile feedback",
+            "dexterous manipulation",
+            "contact points",
+            "grip force",
+            "tactile representations",
+            "robotic manipulation",
+            "planner"
+          ],
+          "error": null,
+          "latency_s": 1.461,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rob-03",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "multi-robot",
+            "path planning",
+            "warehouse",
+            "collision avoidance",
+            "decentralized planner",
+            "delivery time",
+            "autonomous systems",
+            "navigation"
+          ],
+          "error": null,
+          "latency_s": 17.029,
+          "difficulty": "easy"
+        },
+        {
+          "id": "rob-04",
+          "expected": "Robotics",
+          "predicted": "Robotics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "autonomous drone",
+            "sim-to-real transfer",
+            "domain randomization",
+            "quadrotor",
+            "navigation",
+            "physical robot",
+            "simulation",
+            "policy transfer"
+          ],
+          "error": null,
+          "latency_s": 1.356,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cyb-01",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "ransomware",
+            "behavioral analysis",
+            "file system events",
+            "encryption bursts",
+            "malware detection",
+            "process behavior",
+            "data exfiltration",
+            "threat detection"
+          ],
+          "error": null,
+          "latency_s": 1.465,
+          "difficulty": "easy"
+        },
+        {
+          "id": "cyb-02",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "side-channel attacks",
+            "post-quantum",
+            "key encapsulation",
+            "timing analysis",
+            "power analysis",
+            "lattice-based cryptography",
+            "key exchange",
+            "vulnerabilities"
+          ],
+          "error": null,
+          "latency_s": 1.872,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cyb-03",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Zero Trust Architecture",
+            "identity",
+            "segmentation",
+            "continuous verification",
+            "enterprise security",
+            "systematic review"
+          ],
+          "error": null,
+          "latency_s": 1.357,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cyb-04",
+          "expected": "Cybersecurity",
+          "predicted": "Cybersecurity",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "SQL Injection",
+            "kerentanan aplikasi web",
+            "validasi input",
+            "mitigasi",
+            "PHP",
+            "keamanan siber"
+          ],
+          "error": null,
+          "latency_s": 1.977,
+          "difficulty": "easy"
+        },
+        {
+          "id": "cloud-01",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "serverless",
+            "cold start",
+            "container warm pools",
+            "workload predictor",
+            "tail latency",
+            "serverless platforms",
+            "container pre-warming",
+            "infrastructure"
+          ],
+          "error": null,
+          "latency_s": 1.243,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cloud-02",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "autoscaling",
+            "microservices",
+            "Kubernetes",
+            "resource cost",
+            "workload forecasts",
+            "horizontal scaling",
+            "controller",
+            "response time"
+          ],
+          "error": null,
+          "latency_s": 2.805,
+          "difficulty": "medium"
+        },
+        {
+          "id": "cloud-03",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "multi-cloud",
+            "data placement",
+            "latency",
+            "sovereignty",
+            "optimization",
+            "cloud providers"
+          ],
+          "error": null,
+          "latency_s": 1.363,
+          "difficulty": "hard"
+        },
+        {
+          "id": "cloud-04",
+          "expected": "Cloud Computing",
+          "predicted": "Cloud Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "virtual machine consolidation",
+            "data centers",
+            "power consumption",
+            "migration-aware scheduler",
+            "service-level objectives",
+            "energy efficiency",
+            "cloud infrastructure",
+            "resource management"
+          ],
+          "error": null,
+          "latency_s": 1.193,
+          "difficulty": "hard"
+        },
+        {
+          "id": "iot-01",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "LoRaWAN",
+            "soil moisture",
+            "sensor nodes",
+            "gateway",
+            "irrigation scheduling",
+            "precision agriculture",
+            "low-power",
+            "wireless sensor network"
+          ],
+          "error": null,
+          "latency_s": 1.306,
+          "difficulty": "medium"
+        },
+        {
+          "id": "iot-02",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "edge computing",
+            "embedded gateway",
+            "vibration sensors",
+            "real-time anomaly detection",
+            "industrial IoT",
+            "local inference",
+            "machine fault detection",
+            "stream processing"
+          ],
+          "error": null,
+          "latency_s": 1.273,
+          "difficulty": "hard"
+        },
+        {
+          "id": "iot-03",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "smart home",
+            "energy management",
+            "Zigbee",
+            "sensors",
+            "appliances",
+            "load shifting",
+            "peak demand",
+            "embedded devices"
+          ],
+          "error": null,
+          "latency_s": 1.665,
+          "difficulty": "medium"
+        },
+        {
+          "id": "iot-04",
+          "expected": "Internet of Things",
+          "predicted": "Internet of Things",
+          "correct": true,
+          "confidence": 0.92,
+          "keywords": [
+            "wearable sensor",
+            "vital sign monitoring",
+            "body-worn devices",
+            "heart rate",
+            "oxygen saturation",
+            "mobile application",
+            "early warning",
+            "sensor networks"
+          ],
+          "error": null,
+          "latency_s": 5.05,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bc-01",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "smart contract",
+            "verification",
+            "decentralized finance",
+            "reentrancy",
+            "arithmetic vulnerabilities",
+            "formal methods",
+            "deployed contracts",
+            "blockchain security"
+          ],
+          "error": null,
+          "latency_s": 1.154,
+          "difficulty": "medium"
+        },
+        {
+          "id": "bc-02",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "consensus protocol",
+            "permissioned ledger",
+            "Byzantine fault tolerance",
+            "finality",
+            "consortium network",
+            "supply chain",
+            "distributed ledger",
+            "smart contract"
+          ],
+          "error": null,
+          "latency_s": 1.258,
+          "difficulty": "medium"
+        },
+        {
+          "id": "bc-03",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "tokenization",
+            "distributed ledgers",
+            "academic credentials",
+            "verifiable diplomas",
+            "smart contracts",
+            "decentralized validation",
+            "blockchain",
+            "digital certificates"
+          ],
+          "error": null,
+          "latency_s": 27.679,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bc-04",
+          "expected": "Blockchain",
+          "predicted": "Blockchain",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "sharded blockchain",
+            "cross-shard communication",
+            "throughput",
+            "validator counts",
+            "scalability",
+            "distributed ledger"
+          ],
+          "error": null,
+          "latency_s": 3.006,
+          "difficulty": "medium"
+        },
+        {
+          "id": "qc-01",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "error mitigation",
+            "zero-noise extrapolation",
+            "probabilistic error cancellation",
+            "superconducting devices",
+            "near-term quantum circuits"
+          ],
+          "error": null,
+          "latency_s": 2.064,
+          "difficulty": "medium"
+        },
+        {
+          "id": "qc-02",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Variational Quantum Algorithms",
+            "Molecular Simulation",
+            "Ground-state Energy",
+            "Ansatz Design",
+            "Optimization Landscapes"
+          ],
+          "error": null,
+          "latency_s": 1.258,
+          "difficulty": "hard"
+        },
+        {
+          "id": "qc-03",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "topological qubits",
+            "anyonic braiding",
+            "error-correcting codes",
+            "fault-tolerant quantum gates",
+            "scalable quantum processors"
+          ],
+          "error": null,
+          "latency_s": 1.359,
+          "difficulty": "medium"
+        },
+        {
+          "id": "qc-04",
+          "expected": "Quantum Computing",
+          "predicted": "Quantum Computing",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "quantum annealers",
+            "combinatorial optimization",
+            "embedding strategies",
+            "annealing schedules",
+            "max-cut",
+            "graph coloring"
+          ],
+          "error": null,
+          "latency_s": 2.694,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bio-01",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "single-cell RNA sequencing",
+            "tumor heterogeneity",
+            "breast cancer",
+            "clustering",
+            "trajectory inference",
+            "malignant subpopulations",
+            "genomics",
+            "computational biology"
+          ],
+          "error": null,
+          "latency_s": 2.794,
+          "difficulty": "medium"
+        },
+        {
+          "id": "bio-02",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "genome-wide association study",
+            "drought tolerance",
+            "rice",
+            "genotyping",
+            "phenotype",
+            "candidate loci",
+            "yield under stress",
+            "genomics"
+          ],
+          "error": null,
+          "latency_s": 1.258,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bio-03",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "protein structure prediction",
+            "graph neural networks",
+            "residue contacts",
+            "tertiary structure",
+            "amino-acid sequences",
+            "geometric deep learning",
+            "proteomics",
+            "computational biology"
+          ],
+          "error": null,
+          "latency_s": 1.257,
+          "difficulty": "hard"
+        },
+        {
+          "id": "bio-04",
+          "expected": "Bioinformatics",
+          "predicted": "Bioinformatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "metagenomic profiling",
+            "gut microbiome",
+            "shotgun sequencing",
+            "taxonomic annotation",
+            "microbial communities",
+            "cohorts",
+            "genomics",
+            "computational biology"
+          ],
+          "error": null,
+          "latency_s": 4.125,
+          "difficulty": "medium"
+        },
+        {
+          "id": "med-01",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "brain tumor",
+            "MRI",
+            "segmentation",
+            "U-Net",
+            "multi-modal",
+            "edema",
+            "necrotic tissue",
+            "enhancing tumor"
+          ],
+          "error": null,
+          "latency_s": 1.258,
+          "difficulty": "easy"
+        },
+        {
+          "id": "med-02",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "radiomics",
+            "CT scans",
+            "texture features",
+            "lung cancer",
+            "immunotherapy",
+            "treatment response"
+          ],
+          "error": null,
+          "latency_s": 1.254,
+          "difficulty": "hard"
+        },
+        {
+          "id": "med-03",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Low-Dose CT",
+            "Denoising",
+            "Diffusion Models",
+            "Diagnostic-quality images",
+            "Reduced-radiation acquisitions"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "hard"
+        },
+        {
+          "id": "med-04",
+          "expected": "Medical Imaging",
+          "predicted": "Medical Imaging",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "retinopati diabetik",
+            "citra fundus",
+            "retina",
+            "CNN",
+            "klasifikasi keparahan",
+            "deteksi",
+            "citra medis"
+          ],
+          "error": null,
+          "latency_s": 1.211,
+          "difficulty": "medium"
+        },
+        {
+          "id": "hi-01",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Electronic Health Records",
+            "interoperability",
+            "master patient index",
+            "regional hospitals",
+            "clinical systems",
+            "health data systems"
+          ],
+          "error": null,
+          "latency_s": 1.508,
+          "difficulty": "medium"
+        },
+        {
+          "id": "hi-02",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "telemedicine",
+            "rural primary care",
+            "workflow integration",
+            "referral pathways",
+            "clinician adoption",
+            "remote consultation",
+            "clinical workflow",
+            "healthcare system"
+          ],
+          "error": null,
+          "latency_s": 1.568,
+          "difficulty": "medium"
+        },
+        {
+          "id": "hi-03",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "medication reconciliation",
+            "clinical decision support",
+            "drug interactions",
+            "hospital records",
+            "pharmacy data",
+            "health information systems"
+          ],
+          "error": null,
+          "latency_s": 1.359,
+          "difficulty": "hard"
+        },
+        {
+          "id": "hi-04",
+          "expected": "Health Informatics",
+          "predicted": "Health Informatics",
+          "correct": true,
+          "confidence": 0.9,
+          "keywords": [
+            "hospital readmission",
+            "administrative claims data",
+            "risk scores",
+            "care-management workflow",
+            "post-discharge follow-up",
+            "healthcare data",
+            "predictive modeling",
+            "clinical decision support"
+          ],
+          "error": null,
+          "latency_s": 1.621,
+          "difficulty": "hard"
+        },
+        {
+          "id": "env-01",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "microplastic",
+            "coastal sediments",
+            "polymer types",
+            "accumulation rates",
+            "urban estuaries",
+            "sediment cores",
+            "pollution",
+            "ecology"
+          ],
+          "error": null,
+          "latency_s": 1.713,
+          "difficulty": "medium"
+        },
+        {
+          "id": "env-02",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "climate change",
+            "drought risk",
+            "regional climate projections",
+            "water deficits",
+            "agricultural exposure",
+            "downscaling"
+          ],
+          "error": null,
+          "latency_s": 1.361,
+          "difficulty": "medium"
+        },
+        {
+          "id": "env-03",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Life Cycle Assessment",
+            "municipal waste",
+            "landfill",
+            "composting",
+            "incineration",
+            "emissions",
+            "energy use",
+            "waste management"
+          ],
+          "error": null,
+          "latency_s": 2.218,
+          "difficulty": "hard"
+        },
+        {
+          "id": "env-04",
+          "expected": "Environmental Science",
+          "predicted": "Environmental Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "peatland",
+            "restoration",
+            "rewetting",
+            "carbon emissions",
+            "ecosystem",
+            "carbon-flux"
+          ],
+          "error": null,
+          "latency_s": 1.627,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-01",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Anomalous Hall Effect",
+            "Two-Dimensional Magnets",
+            "van der Waals crystals",
+            "Hall response",
+            "topological contributions",
+            "transport measurements"
+          ],
+          "error": null,
+          "latency_s": 13.033,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-02",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "gravitational waves",
+            "binary neutron star",
+            "merger",
+            "waveform",
+            "equation of state",
+            "dense matter"
+          ],
+          "error": null,
+          "latency_s": 1.156,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-03",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "ultrafast laser spectroscopy",
+            "perovskite thin films",
+            "time-resolved photoluminescence",
+            "charge-carrier dynamics",
+            "femtosecond timescales"
+          ],
+          "error": null,
+          "latency_s": 1.15,
+          "difficulty": "hard"
+        },
+        {
+          "id": "phy-04",
+          "expected": "Physics",
+          "predicted": "Physics",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "neutrino",
+            "oscillation",
+            "mixing angles",
+            "mass splittings",
+            "disappearance",
+            "appearance",
+            "particle physics",
+            "experiment"
+          ],
+          "error": null,
+          "latency_s": 1.401,
+          "difficulty": "hard"
+        },
+        {
+          "id": "chem-01",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "biodegradable polymers",
+            "lactic acid",
+            "ring-opening polymerization",
+            "molecular weight",
+            "degradation rate",
+            "polymer synthesis"
+          ],
+          "error": null,
+          "latency_s": 1.221,
+          "difficulty": "medium"
+        },
+        {
+          "id": "chem-02",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "organocatalysis",
+            "reaction mechanisms",
+            "density functional theory",
+            "transition states",
+            "selectivity"
+          ],
+          "error": null,
+          "latency_s": 1.05,
+          "difficulty": "hard"
+        },
+        {
+          "id": "chem-03",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "sodium-ion battery",
+            "electrolytes",
+            "solvation structure",
+            "interfacial stability",
+            "electrochemical storage",
+            "cycling performance"
+          ],
+          "error": null,
+          "latency_s": 1.465,
+          "difficulty": "hard"
+        },
+        {
+          "id": "chem-04",
+          "expected": "Chemistry",
+          "predicted": "Chemistry",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "metal-organic frameworks",
+            "surface functionalization",
+            "ligand modifications",
+            "carbon dioxide uptake",
+            "gas adsorption",
+            "selectivity"
+          ],
+          "error": null,
+          "latency_s": 1.257,
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-01",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Riemann Hypothesis",
+            "function fields",
+            "algebraic geometry",
+            "zeta zeros",
+            "intersection numbers"
+          ],
+          "error": null,
+          "latency_s": 1.155,
+          "difficulty": "hard"
+        },
+        {
+          "id": "math-02",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "random matrices",
+            "Wigner matrices",
+            "eigenvalues",
+            "heavy-tailed",
+            "concentration bounds",
+            "spectral properties"
+          ],
+          "error": null,
+          "latency_s": 1.156,
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-03",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "fractional differential equations",
+            "finite-difference schemes",
+            "stability",
+            "convergence",
+            "non-smooth initial data",
+            "numerical methods"
+          ],
+          "error": null,
+          "latency_s": 1.769,
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-04",
+          "expected": "Mathematics",
+          "predicted": "Mathematics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Graph Coloring",
+            "Lovász Local Lemma",
+            "Chromatic Number",
+            "Probabilistic Combinatorics",
+            "Sparse Random Graphs"
+          ],
+          "error": null,
+          "latency_s": 1.565,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-01",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "seismic retrofitting",
+            "reinforced concrete bridges",
+            "fibre-reinforced jackets",
+            "isolation bearings",
+            "shake-table testing",
+            "structural engineering",
+            "civil engineering",
+            "earthquake engineering"
+          ],
+          "error": null,
+          "latency_s": 1.872,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-02",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "lithium-ion battery",
+            "electric vehicles",
+            "thermal management",
+            "liquid-cooling",
+            "fast charging",
+            "temperature gradients",
+            "battery pack design",
+            "thermal optimization"
+          ],
+          "error": null,
+          "latency_s": 3.543,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-03",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Additive Manufacturing",
+            "Titanium Alloy",
+            "Laser Powder-Bed Fusion",
+            "Porosity",
+            "Fatigue Life",
+            "Process Parameters",
+            "Materials Engineering",
+            "Component Fabrication"
+          ],
+          "error": null,
+          "latency_s": 1.67,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eng-04",
+          "expected": "Engineering",
+          "predicted": "Engineering",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Low-Noise Amplifier",
+            "5G Receivers",
+            "Impedance Matching",
+            "Noise Figure",
+            "Circuit Topology",
+            "Gain",
+            "Bandwidth",
+            "RF Circuit Design"
+          ],
+          "error": null,
+          "latency_s": 14.226,
+          "difficulty": "hard"
+        },
+        {
+          "id": "eco-01",
+          "expected": "Economics",
+          "predicted": "Economics",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "monetary policy",
+            "emerging markets",
+            "credit growth",
+            "inflation expectations",
+            "policy rates",
+            "panel estimates"
+          ],
+          "error": null,
+          "latency_s": 1.357,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eco-02",
+          "expected": "Economics",
+          "predicted": "Economics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "minimum wage",
+            "youth employment",
+            "difference-in-differences",
+            "wage floors",
+            "regional variation",
+            "labor market",
+            "econometrics",
+            "employment impact"
+          ],
+          "error": null,
+          "latency_s": 62.966,
+          "difficulty": "medium"
+        },
+        {
+          "id": "eco-03",
+          "expected": "Economics",
+          "predicted": "Economics",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "household debt",
+            "consumption smoothing",
+            "recessions",
+            "leverage",
+            "income shocks",
+            "spending",
+            "survey data"
+          ],
+          "error": null,
+          "latency_s": 1.3,
+          "difficulty": "hard"
+        },
+        {
+          "id": "eco-04",
+          "expected": "Economics",
+          "predicted": "Economics",
+          "correct": true,
+          "confidence": 0.9,
+          "keywords": [
+            "vocational education",
+            "earnings",
+            "panel data",
+            "returns to education",
+            "secondary graduates",
+            "labor market",
+            "econometrics",
+            "wage trajectories"
+          ],
+          "error": null,
+          "latency_s": 1.259,
+          "difficulty": "hard"
+        },
+        {
+          "id": "soc-01",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "social capital",
+            "disaster recovery",
+            "urban communities",
+            "neighborhood networks",
+            "relief access",
+            "rebuilding",
+            "ethnographic fieldwork",
+            "community resilience"
+          ],
+          "error": null,
+          "latency_s": 1.189,
+          "difficulty": "medium"
+        },
+        {
+          "id": "soc-02",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "digital activism",
+            "political participation",
+            "youth",
+            "online campaigns",
+            "offline civic engagement",
+            "sociology",
+            "political science",
+            "communication"
+          ],
+          "error": null,
+          "latency_s": 1.526,
+          "difficulty": "medium"
+        },
+        {
+          "id": "soc-03",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "migrant labor",
+            "recruitment chains",
+            "remittance practices",
+            "ethnography",
+            "participant observation",
+            "interviews",
+            "labor networks",
+            "migration"
+          ],
+          "error": null,
+          "latency_s": 2.814,
+          "difficulty": "medium"
+        },
+        {
+          "id": "soc-04",
+          "expected": "Social Science",
+          "predicted": "Social Science",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "media framing",
+            "climate protest",
+            "content analysis",
+            "protest legitimacy",
+            "newspaper coverage",
+            "social movements",
+            "communication",
+            "public perception"
+          ],
+          "error": null,
+          "latency_s": 1.24,
+          "difficulty": "hard"
+        },
+        {
+          "id": "law-01",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "constitutional review",
+            "emergency powers",
+            "judicial standards",
+            "executive measures",
+            "public emergencies"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "medium"
+        },
+        {
+          "id": "law-02",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "algorithmic decision-making",
+            "data protection law",
+            "transparency",
+            "explainability",
+            "redress",
+            "automated decisions",
+            "regulation",
+            "privacy"
+          ],
+          "error": null,
+          "latency_s": 1.359,
+          "difficulty": "hard"
+        },
+        {
+          "id": "law-03",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "hukum adat",
+            "sengketa tanah",
+            "mediasi",
+            "kepemilikan tanah",
+            "Indonesia"
+          ],
+          "error": null,
+          "latency_s": 1.476,
+          "difficulty": "medium"
+        },
+        {
+          "id": "law-04",
+          "expected": "Law",
+          "predicted": "Law",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "autonomous vehicle",
+            "negligence",
+            "product liability",
+            "strict liability",
+            "accidents",
+            "legal frameworks"
+          ],
+          "error": null,
+          "latency_s": 1.141,
+          "difficulty": "hard"
+        },
+        {
+          "id": "edu-01",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Project-Based Learning",
+            "Secondary Mathematics",
+            "Problem-Solving",
+            "Student Engagement",
+            "Quasi-experimental"
+          ],
+          "error": null,
+          "latency_s": 1.357,
+          "difficulty": "medium"
+        },
+        {
+          "id": "edu-02",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "teacher feedback",
+            "student engagement",
+            "online courses",
+            "participation",
+            "completion rates"
+          ],
+          "error": null,
+          "latency_s": 1.361,
+          "difficulty": "medium"
+        },
+        {
+          "id": "edu-03",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "curriculum reform",
+            "vocational high schools",
+            "policy documents",
+            "industry needs",
+            "interviews",
+            "alignment",
+            "education policy",
+            "vocational education"
+          ],
+          "error": null,
+          "latency_s": 2.18,
+          "difficulty": "medium"
+        },
+        {
+          "id": "edu-04",
+          "expected": "Education",
+          "predicted": "Education",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "assessment literacy",
+            "pre-service teachers",
+            "teacher candidates",
+            "assessment evidence",
+            "portfolio analysis",
+            "survey",
+            "pedagogy",
+            "teacher education"
+          ],
+          "error": null,
+          "latency_s": 1.155,
+          "difficulty": "hard"
+        },
+        {
+          "id": "psy-01",
+          "expected": "Psychology",
+          "predicted": "Psychology",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "cognitive load",
+            "multitasking",
+            "working memory",
+            "task switching",
+            "reaction time"
+          ],
+          "error": null,
+          "latency_s": 1.36,
+          "difficulty": "medium"
+        },
+        {
+          "id": "psy-02",
+          "expected": "Psychology",
+          "predicted": "Psychology",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "adolescent",
+            "social media",
+            "mental health",
+            "anxiety",
+            "sleep quality",
+            "longitudinal survey"
+          ],
+          "error": null,
+          "latency_s": 9.754,
+          "difficulty": "medium"
+        },
+        {
+          "id": "psy-03",
+          "expected": "Psychology",
+          "predicted": "Psychology",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "implicit bias",
+            "stereotypes",
+            "hiring decisions",
+            "candidate evaluation",
+            "automatic stereotypes",
+            "social cognition",
+            "experimental vignettes",
+            "discrimination"
+          ],
+          "error": null,
+          "latency_s": 1.974,
+          "difficulty": "hard"
+        },
+        {
+          "id": "psy-04",
+          "expected": "Psychology",
+          "predicted": "Psychology",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "sleep quality",
+            "emotional regulation",
+            "affect regulation",
+            "sleep disruption",
+            "diary data",
+            "physiological data",
+            "mental health",
+            "behavior"
+          ],
+          "error": null,
+          "latency_s": 1.139,
+          "difficulty": "medium"
+        },
+        {
+          "id": "lit-01",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "postcolonial ecocriticism",
+            "contemporary Indonesian novels",
+            "land",
+            "water",
+            "displacement",
+            "literary analysis"
+          ],
+          "error": null,
+          "latency_s": 1.482,
+          "difficulty": "medium"
+        },
+        {
+          "id": "lit-02",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Virginia Woolf",
+            "narrative structure",
+            "late fiction",
+            "temporal shifts",
+            "interior monologue",
+            "close reading",
+            "narratology",
+            "literary analysis"
+          ],
+          "error": null,
+          "latency_s": 2.384,
+          "difficulty": "medium"
+        },
+        {
+          "id": "lit-03",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "translation",
+            "cultural identity",
+            "poetry",
+            "metaphor",
+            "rhythm",
+            "comparative reading",
+            "language versions",
+            "literary analysis"
+          ],
+          "error": null,
+          "latency_s": 10.986,
+          "difficulty": "hard"
+        },
+        {
+          "id": "lit-04",
+          "expected": "Literature",
+          "predicted": "Literature",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Gothic Tradition",
+            "Southeast Asian Short Stories",
+            "supernatural motifs",
+            "local historical contexts",
+            "literary analysis"
+          ],
+          "error": null,
+          "latency_s": 1.871,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-01",
+          "expected": "History",
+          "predicted": "History",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "Maritime Trade",
+            "Port Cities",
+            "Malay Archipelago",
+            "1500-1700",
+            "Customs Records",
+            "Travel Accounts",
+            "Commercial Networks",
+            "Historical Reconstruction"
+          ],
+          "error": null,
+          "latency_s": 1.463,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-02",
+          "expected": "History",
+          "predicted": "History",
+          "correct": true,
+          "confidence": 0.9,
+          "keywords": [
+            "Cold War",
+            "propaganda",
+            "cultural diplomacy",
+            "Asia",
+            "archival materials",
+            "exhibitions",
+            "radio broadcasts",
+            "influence strategies"
+          ],
+          "error": null,
+          "latency_s": 1.154,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-03",
+          "expected": "History",
+          "predicted": "History",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "labor movements",
+            "colonial plantations",
+            "strikes",
+            "union formation",
+            "state repression",
+            "early twentieth century",
+            "colonialism",
+            "labor history"
+          ],
+          "error": null,
+          "latency_s": 1.357,
+          "difficulty": "medium"
+        },
+        {
+          "id": "his-04",
+          "expected": "History",
+          "predicted": "History",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "historiography",
+            "1965 Indonesian Transition",
+            "political violence",
+            "archival foundations",
+            "competing accounts",
+            "Indonesian history",
+            "political history",
+            "archival research"
+          ],
+          "error": null,
+          "latency_s": 1.467,
+          "difficulty": "hard"
+        },
+        {
+          "id": "phi-01",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "epistemic injustice",
+            "algorithmic decision systems",
+            "testimonial harm",
+            "hermeneutical harm",
+            "philosophical account",
+            "automated scoring"
+          ],
+          "error": null,
+          "latency_s": 1.256,
+          "difficulty": "hard"
+        },
+        {
+          "id": "phi-02",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Kant",
+            "autonomy",
+            "categorical imperative",
+            "moral autonomy",
+            "self-direction",
+            "ethics",
+            "deontology",
+            "philosophy"
+          ],
+          "error": null,
+          "latency_s": 1.357,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phi-03",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "dignity",
+            "fairness",
+            "human enhancement",
+            "ethics",
+            "technology",
+            "moral limits"
+          ],
+          "error": null,
+          "latency_s": 1.38,
+          "difficulty": "medium"
+        },
+        {
+          "id": "phi-04",
+          "expected": "Philosophy",
+          "predicted": "Philosophy",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Phenomenology",
+            "Merleau-Ponty",
+            "lived body",
+            "perceptual experience",
+            "embodiment"
+          ],
+          "error": null,
+          "latency_s": 1.237,
+          "difficulty": "hard"
+        },
+        {
+          "id": "rel-01",
+          "expected": "Religion",
+          "predicted": "Religion",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Theology of Liberation",
+            "Latin America",
+            "exegesis",
+            "social commitments",
+            "institutional reception",
+            "religious movement",
+            "Christianity",
+            "theology"
+          ],
+          "error": null,
+          "latency_s": 1.568,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rel-02",
+          "expected": "Religion",
+          "predicted": "History",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "Hadith",
+            "Transmission Networks",
+            "Classical Period",
+            "Prosopographical Analysis",
+            "Narrators",
+            "Scholarly Exchange"
+          ],
+          "error": null,
+          "latency_s": 1.259,
+          "difficulty": "medium"
+        },
+        {
+          "id": "rel-03",
+          "expected": "Religion",
+          "predicted": "Religion",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "religious pluralism",
+            "interfaith dialogue",
+            "legal recognition",
+            "coexistence",
+            "Indonesia"
+          ],
+          "error": null,
+          "latency_s": 1.253,
+          "difficulty": "hard"
+        },
+        {
+          "id": "rel-04",
+          "expected": "Religion",
+          "predicted": "Religion",
+          "correct": true,
+          "confidence": 0.98,
+          "keywords": [
+            "Buddhism",
+            "ritual practice",
+            "pilgrimage",
+            "relic veneration",
+            "devotional travel",
+            "medieval",
+            "textual evidence",
+            "archaeological evidence"
+          ],
+          "error": null,
+          "latency_s": 1.363,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-01",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "jazz",
+            "improvisation",
+            "composition",
+            "music",
+            "structure",
+            "performance",
+            "transcription",
+            "contemporary music"
+          ],
+          "error": null,
+          "latency_s": 1.357,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-02",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "installation art",
+            "public spaces",
+            "site-specific",
+            "audience interaction",
+            "spatial politics",
+            "aesthetics"
+          ],
+          "error": null,
+          "latency_s": 12.219,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-03",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "costume design",
+            "theater",
+            "cultural representation",
+            "identity",
+            "historical memory",
+            "staging",
+            "performing arts",
+            "design choices"
+          ],
+          "error": null,
+          "latency_s": 1.753,
+          "difficulty": "medium"
+        },
+        {
+          "id": "art-04",
+          "expected": "Arts",
+          "predicted": "Arts",
+          "correct": true,
+          "confidence": 0.95,
+          "keywords": [
+            "digital animation",
+            "independent cinema",
+            "hybrid workflows",
+            "visual style",
+            "small studios",
+            "production constraints"
+          ],
+          "error": null,
+          "latency_s": 1.17,
+          "difficulty": "hard"
+        },
+        {
+          "id": "oth-01",
+          "expected": "Other",
+          "predicted": "Social Science",
+          "correct": false,
+          "confidence": 0.85,
+          "keywords": [
+            "time",
+            "anthropology",
+            "interdisciplinary",
+            "social organization",
+            "measurement",
+            "experience",
+            "physics",
+            "humanities"
+          ],
+          "error": null,
+          "latency_s": 5.149,
+          "difficulty": "hard"
+        },
+        {
+          "id": "oth-02",
+          "expected": "Other",
+          "predicted": "Education",
+          "correct": false,
+          "confidence": 0.9,
+          "keywords": [
+            "scientific editing",
+            "technical terms",
+            "manuscript preparation",
+            "style conventions",
+            "reference work",
+            "academic writing",
+            "terminology",
+            "publishing"
+          ],
+          "error": null,
+          "latency_s": 31.363,
+          "difficulty": "medium"
+        },
+        {
+          "id": "oth-03",
+          "expected": "Other",
+          "predicted": "Engineering",
+          "correct": false,
+          "confidence": 0.95,
+          "keywords": [
+            "infrastruktur",
+            "maintenance",
+            "fasilitas",
+            "inspeksi gedung",
+            "jadwal pemeliharaan",
+            "anggaran",
+            "perencanaan",
+            "universitas"
+          ],
+          "error": null,
+          "latency_s": 1.358,
+          "difficulty": "medium"
+        },
+        {
+          "id": "oth-04",
+          "expected": "Other",
+          "predicted": "Social Science",
+          "correct": false,
+          "confidence": 0.85,
+          "keywords": [
+            "crisis management",
+            "public institutions",
+            "coordination",
+            "communication protocols",
+            "post-crisis review",
+            "public administration",
+            "organizational resilience",
+            "emergency management"
+          ],
+          "error": null,
+          "latency_s": 1.362,
+          "difficulty": "hard"
+        }
+      ]
+    }
+  },
+  "fallback": {
+    "summary": {
+      "total": 120,
+      "evaluated": 120,
+      "correct": 35,
+      "errors": 0,
+      "accuracy_evaluated": 0.2917,
+      "accuracy_all": 0.2917,
+      "latency": {
+        "count": 120,
+        "avg": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "per_category": {
+        "Artificial Intelligence": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 3,
+          "errors": 0,
+          "accuracy": 0.75
+        },
+        "Arts": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Bioinformatics": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Blockchain": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 2,
+          "errors": 0,
+          "accuracy": 0.5
+        },
+        "Chemistry": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Cloud Computing": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Computer Vision": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Cybersecurity": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Data Science": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 2,
+          "errors": 0,
+          "accuracy": 0.5
+        },
+        "Economics": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Education": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Engineering": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Environmental Science": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Health Informatics": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "History": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Internet of Things": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 4,
+          "errors": 0,
+          "accuracy": 1.0
+        },
+        "Law": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Literature": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 2,
+          "errors": 0,
+          "accuracy": 0.5
+        },
+        "Machine Learning": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Mathematics": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Medical Imaging": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Natural Language Processing": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 2,
+          "errors": 0,
+          "accuracy": 0.5
+        },
+        "Other": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 2,
+          "errors": 0,
+          "accuracy": 0.5
+        },
+        "Philosophy": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Physics": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        },
+        "Psychology": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 3,
+          "errors": 0,
+          "accuracy": 0.75
+        },
+        "Quantum Computing": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 4,
+          "errors": 0,
+          "accuracy": 1.0
+        },
+        "Religion": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Robotics": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 1,
+          "errors": 0,
+          "accuracy": 0.25
+        },
+        "Social Science": {
+          "total": 4,
+          "evaluated": 4,
+          "correct": 0,
+          "errors": 0,
+          "accuracy": 0.0
+        }
+      },
+      "elapsed_s": 0.01,
+      "model": "keyword-fallback"
+    },
+    "results": [
+      {
+        "id": "ai-01",
+        "expected": "Artificial Intelligence",
+        "predicted": "Artificial Intelligence",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "ai-02",
+        "expected": "Artificial Intelligence",
+        "predicted": "Robotics",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "autonomous"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "ai-03",
+        "expected": "Artificial Intelligence",
+        "predicted": "Artificial Intelligence",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "ai-04",
+        "expected": "Artificial Intelligence",
+        "predicted": "Artificial Intelligence",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "ml-01",
+        "expected": "Machine Learning",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "neural network"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "easy"
+      },
+      {
+        "id": "ml-02",
+        "expected": "Machine Learning",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "ml-03",
+        "expected": "Machine Learning",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "ml-04",
+        "expected": "Machine Learning",
+        "predicted": "Machine Learning",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "classification"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "ds-01",
+        "expected": "Data Science",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "ds-02",
+        "expected": "Data Science",
+        "predicted": "Data Science",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "analytics"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "ds-03",
+        "expected": "Data Science",
+        "predicted": "Data Science",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "analytics"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "ds-04",
+        "expected": "Data Science",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "cv-01",
+        "expected": "Computer Vision",
+        "predicted": "Machine Learning",
+        "correct": false,
+        "confidence": 0.6,
+        "keywords": [
+          "supervised",
+          "classification"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "easy"
+      },
+      {
+        "id": "cv-02",
+        "expected": "Computer Vision",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "cv-03",
+        "expected": "Computer Vision",
+        "predicted": "Internet of Things",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "iot"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "cv-04",
+        "expected": "Computer Vision",
+        "predicted": "Mathematics",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "statistics"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "nlp-01",
+        "expected": "Natural Language Processing",
+        "predicted": "Education",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "learning"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "easy"
+      },
+      {
+        "id": "nlp-02",
+        "expected": "Natural Language Processing",
+        "predicted": "Natural Language Processing",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "sentiment"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "nlp-03",
+        "expected": "Natural Language Processing",
+        "predicted": "Natural Language Processing",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "language model"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "nlp-04",
+        "expected": "Natural Language Processing",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "rob-01",
+        "expected": "Robotics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "rob-02",
+        "expected": "Robotics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "rob-03",
+        "expected": "Robotics",
+        "predicted": "Robotics",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "robot"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "easy"
+      },
+      {
+        "id": "rob-04",
+        "expected": "Robotics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "cyb-01",
+        "expected": "Cybersecurity",
+        "predicted": "Cybersecurity",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "ransomware"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "easy"
+      },
+      {
+        "id": "cyb-02",
+        "expected": "Cybersecurity",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "cyb-03",
+        "expected": "Cybersecurity",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "cyb-04",
+        "expected": "Cybersecurity",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "easy"
+      },
+      {
+        "id": "cloud-01",
+        "expected": "Cloud Computing",
+        "predicted": "Cloud Computing",
+        "correct": true,
+        "confidence": 0.6,
+        "keywords": [
+          "serverless",
+          "container"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "cloud-02",
+        "expected": "Cloud Computing",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "cloud-03",
+        "expected": "Cloud Computing",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "cloud-04",
+        "expected": "Cloud Computing",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "iot-01",
+        "expected": "Internet of Things",
+        "predicted": "Internet of Things",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "sensor"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "iot-02",
+        "expected": "Internet of Things",
+        "predicted": "Internet of Things",
+        "correct": true,
+        "confidence": 0.6,
+        "keywords": [
+          "sensor",
+          "embedded"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "iot-03",
+        "expected": "Internet of Things",
+        "predicted": "Internet of Things",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "sensor"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "iot-04",
+        "expected": "Internet of Things",
+        "predicted": "Internet of Things",
+        "correct": true,
+        "confidence": 0.6,
+        "keywords": [
+          "sensor",
+          "wearable"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "bc-01",
+        "expected": "Blockchain",
+        "predicted": "Blockchain",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "smart contract"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "bc-02",
+        "expected": "Blockchain",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "bc-03",
+        "expected": "Blockchain",
+        "predicted": "Blockchain",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "distributed ledger"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "bc-04",
+        "expected": "Blockchain",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "qc-01",
+        "expected": "Quantum Computing",
+        "predicted": "Quantum Computing",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "quantum"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "qc-02",
+        "expected": "Quantum Computing",
+        "predicted": "Quantum Computing",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "quantum"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "qc-03",
+        "expected": "Quantum Computing",
+        "predicted": "Quantum Computing",
+        "correct": true,
+        "confidence": 0.6,
+        "keywords": [
+          "quantum",
+          "qubit"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "qc-04",
+        "expected": "Quantum Computing",
+        "predicted": "Quantum Computing",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "quantum"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "bio-01",
+        "expected": "Bioinformatics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "bio-02",
+        "expected": "Bioinformatics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "bio-03",
+        "expected": "Bioinformatics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.6,
+        "keywords": [
+          "deep learning",
+          "neural network"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "bio-04",
+        "expected": "Bioinformatics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "med-01",
+        "expected": "Medical Imaging",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "easy"
+      },
+      {
+        "id": "med-02",
+        "expected": "Medical Imaging",
+        "predicted": "Medical Imaging",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "ct scan"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "med-03",
+        "expected": "Medical Imaging",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "med-04",
+        "expected": "Medical Imaging",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "neural network"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "hi-01",
+        "expected": "Health Informatics",
+        "predicted": "Arts",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "design"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "hi-02",
+        "expected": "Health Informatics",
+        "predicted": "Health Informatics",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "telemedicine"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "hi-03",
+        "expected": "Health Informatics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "hi-04",
+        "expected": "Health Informatics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "env-01",
+        "expected": "Environmental Science",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "env-02",
+        "expected": "Environmental Science",
+        "predicted": "Environmental Science",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "climate"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "env-03",
+        "expected": "Environmental Science",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "env-04",
+        "expected": "Environmental Science",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "phy-01",
+        "expected": "Physics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "phy-02",
+        "expected": "Physics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "phy-03",
+        "expected": "Physics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "phy-04",
+        "expected": "Physics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "chem-01",
+        "expected": "Chemistry",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "chem-02",
+        "expected": "Chemistry",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "chem-03",
+        "expected": "Chemistry",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "chem-04",
+        "expected": "Chemistry",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "math-01",
+        "expected": "Mathematics",
+        "predicted": "Mathematics",
+        "correct": true,
+        "confidence": 0.6,
+        "keywords": [
+          "algebra",
+          "geometry"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "math-02",
+        "expected": "Mathematics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "math-03",
+        "expected": "Mathematics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "math-04",
+        "expected": "Mathematics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "eng-01",
+        "expected": "Engineering",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "eng-02",
+        "expected": "Engineering",
+        "predicted": "Arts",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "design"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "eng-03",
+        "expected": "Engineering",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "eng-04",
+        "expected": "Engineering",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "eco-01",
+        "expected": "Economics",
+        "predicted": "Economics",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "market"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "eco-02",
+        "expected": "Economics",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "eco-03",
+        "expected": "Economics",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "eco-04",
+        "expected": "Economics",
+        "predicted": "Education",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "education"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "soc-01",
+        "expected": "Social Science",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "soc-02",
+        "expected": "Social Science",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "soc-03",
+        "expected": "Social Science",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "soc-04",
+        "expected": "Social Science",
+        "predicted": "Environmental Science",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "climate"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "law-01",
+        "expected": "Law",
+        "predicted": "Arts",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "art"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "law-02",
+        "expected": "Law",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "law-03",
+        "expected": "Law",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "law-04",
+        "expected": "Law",
+        "predicted": "Robotics",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "autonomous"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "edu-01",
+        "expected": "Education",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "edu-02",
+        "expected": "Education",
+        "predicted": "Arts",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "art"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "edu-03",
+        "expected": "Education",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "edu-04",
+        "expected": "Education",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "psy-01",
+        "expected": "Psychology",
+        "predicted": "Psychology",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "cognitive"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "psy-02",
+        "expected": "Psychology",
+        "predicted": "Psychology",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "mental"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "psy-03",
+        "expected": "Psychology",
+        "predicted": "Psychology",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "mental"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "psy-04",
+        "expected": "Psychology",
+        "predicted": "Law",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "regulation"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "lit-01",
+        "expected": "Literature",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "lit-02",
+        "expected": "Literature",
+        "predicted": "Literature",
+        "correct": true,
+        "confidence": 0.6,
+        "keywords": [
+          "fiction",
+          "narrative"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "lit-03",
+        "expected": "Literature",
+        "predicted": "Literature",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "poetry"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "lit-04",
+        "expected": "Literature",
+        "predicted": "History",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "historical"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "his-01",
+        "expected": "History",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "his-02",
+        "expected": "History",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "his-03",
+        "expected": "History",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "his-04",
+        "expected": "History",
+        "predicted": "Arts",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "art"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "phi-01",
+        "expected": "Philosophy",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "phi-02",
+        "expected": "Philosophy",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "phi-03",
+        "expected": "Philosophy",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "phi-04",
+        "expected": "Philosophy",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "rel-01",
+        "expected": "Religion",
+        "predicted": "Religion",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "theology"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "rel-02",
+        "expected": "Religion",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "rel-03",
+        "expected": "Religion",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "rel-04",
+        "expected": "Religion",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "art-01",
+        "expected": "Arts",
+        "predicted": "Other",
+        "correct": false,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "art-02",
+        "expected": "Arts",
+        "predicted": "Arts",
+        "correct": true,
+        "confidence": 0.45,
+        "keywords": [
+          "art"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "art-03",
+        "expected": "Arts",
+        "predicted": "History",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "historical"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "art-04",
+        "expected": "Arts",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "oth-01",
+        "expected": "Other",
+        "predicted": "Physics",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "physics"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      },
+      {
+        "id": "oth-02",
+        "expected": "Other",
+        "predicted": "Other",
+        "correct": true,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "oth-03",
+        "expected": "Other",
+        "predicted": "Artificial Intelligence",
+        "correct": false,
+        "confidence": 0.45,
+        "keywords": [
+          "ai"
+        ],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "medium"
+      },
+      {
+        "id": "oth-04",
+        "expected": "Other",
+        "predicted": "Other",
+        "correct": true,
+        "confidence": 0.1,
+        "keywords": [],
+        "error": null,
+        "latency_s": 0.0,
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

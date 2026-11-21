@@ -1,0 +1,124 @@
+{
+  "download_methods": [
+    {
+      "id": "unpaywall",
+      "name": "Unpaywall (DOI → OA PDF)",
+      "enabled": true,
+      "priority": 1,
+      "description": "Cari PDF open access via DOI menggunakan Unpaywall",
+      "config": {
+        "source": "unpaywall"
+      }
+    },
+    {
+      "id": "openlibrary",
+      "name": "Open Library (ISBN)",
+      "enabled": true,
+      "priority": 2,
+      "description": "Download buku via ISBN dari Open Library",
+      "config": {
+        "source": "openlibrary"
+      }
+    },
+    {
+      "id": "arxiv_pdf",
+      "name": "arXiv PDF Direct",
+      "enabled": true,
+      "priority": 3,
+      "description": "Download langsung PDF dari arXiv",
+      "config": {
+        "source": "arxiv",
+        "url_pattern": "https://arxiv.org/pdf/{arxiv_id}.pdf"
+      }
+    },
+    {
+      "id": "doaj",
+      "name": "DOAJ Open Access",
+      "enabled": true,
+      "priority": 4,
+      "description": "Download dari Directory of Open Access Journals",
+      "config": {
+        "source": "doaj"
+      }
+    },
+    {
+      "id": "core_download",
+      "name": "CORE Repository",
+      "enabled": true,
+      "priority": 5,
+      "description": "Download dari CORE agregator",
+      "config": {
+        "source": "core"
+      }
+    },
+    {
+      "id": "pubmed_pmc",
+      "name": "PubMed Central",
+      "enabled": true,
+      "priority": 6,
+      "description": "Download dari PubMed Central PMC",
+      "config": {
+        "source": "pubmed",
+        "url_pattern": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC{id}/pdf/"
+      }
+    },
+    {
+      "id": "gutenberg",
+      "name": "Project Gutenberg",
+      "enabled": true,
+      "priority": 7,
+      "description": "Download buku klasik dari Project Gutenberg",
+      "config": {
+        "source": "gutenberg",
+        "formats": [
+          "pdf",
+          "epub",
+          "txt"
+        ]
+      }
+    },
+    {
+      "id": "archive_org",
+      "name": "Internet Archive",
+      "enabled": true,
+      "priority": 8,
+      "description": "Download dari Internet Archive",
+      "config": {
+        "source": "archive"
+      }
+    },
+    {
+      "id": "crossref",
+      "name": "Crossref Metadata",
+      "enabled": false,
+      "priority": 9,
+      "description": "Ambil metadata dan link dari Crossref",
+      "config": {
+        "source": "crossref"
+      }
+    },
+    {
+      "id": "direct_url",
+      "name": "Direct URL",
+      "enabled": true,
+      "priority": 10,
+      "description": "Download langsung dari URL yang provided",
+      "config": {
+        "type": "direct"
+      }
+    }
+  ],
+  "settings": {
+    "max_file_size_mb": 500,
+    "chunk_size_kb": 8,
+    "timeout_seconds": 60,
+    "retry_attempts": 3,
+    "cache_ttl_seconds": 300
+  },
+  "admin": {
+    "allow_add_method": true,
+    "allow_edit_method": true,
+    "allow_delete_method": true,
+    "allow_toggle_enabled": true
+  }
+}

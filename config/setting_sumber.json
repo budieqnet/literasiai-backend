@@ -1,0 +1,386 @@
+{
+  "sources": [
+    {
+      "id": "doaj",
+      "name": "DOAJ",
+      "description": "Directory of Open Access Journals",
+      "type": "journal",
+      "language": "multi",
+      "enabled": true,
+      "api_available": true,
+      "handler": "generic_json",
+      "config": {
+        "base_url": "https://doaj.org/api/v3",
+        "search_endpoint": "/search/articles/{query}",
+        "method": "GET",
+        "params": { "pageSize": "page_size", "page": "page" },
+        "auth": null,
+        "headers": null
+      },
+      "response_mapping": {
+        "results_path": "results",
+        "total_path": "total",
+        "fields": {
+          "title": "bibjson.title",
+          "authors": { "path": "bibjson.author", "extract": "name" },
+          "year": "bibjson.year",
+          "abstract": "bibjson.abstract",
+          "doi": { "path": "bibjson.identifier", "filter": { "type": "doi" }, "extract": "id" },
+          "url": { "path": "bibjson.link", "filter": { "type": "fulltext" }, "extract": "url" },
+          "pdf_url": { "path": "bibjson.link", "filter": { "type": "fulltext" }, "extract": "url" },
+          "language": "bibjson.language[0]",
+          "subjects": { "path": "bibjson.subject", "extract": "term" },
+          "publisher": "bibjson.journal.publisher",
+          "identifier": "id",
+          "doc_type": { "static": "journal" },
+          "source_name": { "static": "DOAJ" }
+        }
+      }
+    },
+    {
+      "id": "pubmed",
+      "name": "PubMed Central",
+      "description": "Kedokteran & biologi — NCBI",
+      "type": "journal",
+      "language": "en",
+      "enabled": true,
+      "api_available": true,
+      "handler": "custom_pubmed",
+      "config": {
+        "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+        "search_params": { "db": "pmc", "retmode": "json", "usehistory": "n" },
+        "summary_params": { "db": "pmc", "retmode": "json" }
+      },
+      "response_mapping": {}
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "description": "Sains, teknik, AI, matematika",
+      "type": "preprint",
+      "language": "en",
+      "enabled": true,
+      "api_available": true,
+      "handler": "custom_arxiv",
+      "config": {
+        "base_url": "https://export.arxiv.org/api/query",
+        "headers": { "Accept": "application/atom+xml" }
+      },
+      "response_mapping": {}
+    },
+    {
+      "id": "core",
+      "name": "CORE",
+      "description": "Agregator 200jt+ paper OA",
+      "type": "journal",
+      "language": "multi",
+      "enabled": true,
+      "api_available": true,
+      "handler": "generic_json",
+      "config": {
+        "base_url": "https://api.core.ac.uk/v3/search/works",
+        "search_endpoint": "",
+        "method": "GET",
+        "params": { "q": "query", "limit": "page_size", "offset": "offset" },
+        "auth": { "type": "bearer", "key_env": "CORE_API_KEY" },
+        "headers": null
+      },
+      "response_mapping": {
+        "results_path": "results",
+        "total_path": "totalHits",
+        "fields": {
+          "title": "title",
+          "authors": { "path": "authors", "extract": "name" },
+          "year": "yearPublished",
+          "abstract": "abstract",
+          "doi": "doi",
+          "url": "sourceFulltextUrls[0]",
+          "download_url": "downloadUrl",
+          "pdf_url": "pdfUrl",
+          "subjects": "subjects",
+          "publisher": "publisher",
+          "identifier": "id",
+          "doc_type": { "static": "journal" },
+          "source_name": { "static": "CORE" }
+        }
+      }
+    },
+    {
+      "id": "garuda",
+      "name": "Garuda Kemdikbud",
+      "description": "Jurnal nasional Indonesia — scraping",
+      "type": "journal",
+      "language": "id",
+      "enabled": true,
+      "api_available": false,
+      "handler": "custom_garuda",
+      "config": {
+        "base_url": "https://garuda.kemdikbud.go.id/documents"
+      },
+      "response_mapping": {}
+    },
+    {
+      "id": "sinta",
+      "name": "SINTA Kemdikbud",
+      "description": "Jurnal terakreditasi Indonesia — scraping",
+      "type": "journal",
+      "language": "id",
+      "enabled": true,
+      "api_available": false,
+      "handler": "custom_sinta",
+      "config": {
+        "base_url": "https://sinta.kemdikbud.go.id/journals"
+      },
+      "response_mapping": {}
+    },
+    {
+      "id": "neliti",
+      "name": "Neliti",
+      "description": "Repositori riset Indonesia",
+      "type": "journal",
+      "language": "id",
+      "enabled": true,
+      "api_available": true,
+      "handler": "generic_json",
+      "config": {
+        "base_url": "https://www.neliti.com/api/publications/search",
+        "search_endpoint": "",
+        "method": "GET",
+        "params": { "q": "query", "page": "page", "limit": "page_size", "type": "journal-article" },
+        "auth": null,
+        "headers": null
+      },
+      "response_mapping": {
+        "results_path": "results",
+        "total_path": "total",
+        "fields": {
+          "title": "title",
+          "authors": "authors",
+          "year": "year",
+          "abstract": "abstract",
+          "doi": "doi",
+          "url": "url",
+          "download_url": "download_url",
+          "pdf_url": "pdf_url",
+          "language": "language",
+          "subjects": "subjects",
+          "publisher": "journal",
+          "identifier": "id",
+          "doc_type": { "static": "journal" },
+          "source_name": { "static": "Neliti" }
+        }
+      }
+    },
+    {
+      "id": "gutenberg",
+      "name": "Project Gutenberg",
+      "description": "70.000+ buku klasik bebas hak cipta",
+      "type": "book",
+      "language": "multi",
+      "enabled": true,
+      "api_available": true,
+      "handler": "generic_json",
+      "config": {
+        "base_url": "https://gutendex.com/books",
+        "search_endpoint": "",
+        "method": "GET",
+        "params": { "search": "query", "page": "page" },
+        "auth": null,
+        "headers": null
+      },
+      "response_mapping": {
+        "results_path": "results",
+        "total_path": "count",
+        "fields": {
+          "title": "title",
+          "authors": { "path": "authors", "extract": "name" },
+          "url": { "custom": "gutenberg_url" },
+          "download_url": { "custom": "gutenberg_download" },
+          "pdf_url": { "path": "formats", "extract": "application/pdf" },
+          "language": "languages[0]",
+          "subjects": { "combine": ["subjects", "bookshelves"] },
+          "identifier": "id",
+          "thumbnail": { "path": "formats", "extract": "image/jpeg" },
+          "doc_type": { "static": "book" },
+          "source_name": { "static": "Project Gutenberg" }
+        }
+      }
+    },
+    {
+      "id": "openlibrary",
+      "name": "Open Library",
+      "description": "Buku & lookup ISBN via Internet Archive",
+      "type": "book",
+      "language": "multi",
+      "enabled": true,
+      "api_available": true,
+      "handler": "generic_json",
+      "config": {
+        "base_url": "https://openlibrary.org/search.json",
+        "search_endpoint": "",
+        "method": "GET",
+        "params": { "q": "query", "page": "page", "limit": "page_size" },
+        "auth": null,
+        "headers": null
+      },
+      "response_mapping": {
+        "results_path": "docs",
+        "total_path": "numFound",
+        "fields": {
+          "title": "title",
+          "authors": "author_name",
+          "year": "first_publish_year",
+          "url": { "custom": "ol_url" },
+          "language": "language[0]",
+          "subjects": "subject",
+          "publisher": "publisher[0]",
+          "identifier": "isbn[0]",
+          "thumbnail": { "custom": "ol_thumbnail" },
+          "doc_type": { "static": "book" },
+          "source_name": { "static": "Open Library" }
+        }
+      }
+    },
+    {
+      "id": "archive",
+      "name": "Internet Archive",
+      "description": "Arsip teks, buku, dan jurnal historis",
+      "type": "mixed",
+      "language": "multi",
+      "enabled": true,
+      "api_available": true,
+      "handler": "generic_json",
+      "config": {
+        "base_url": "https://archive.org/advancedsearch.php",
+        "search_endpoint": "",
+        "method": "GET",
+        "params": {
+          "q": "custom_query",
+          "fl[]": ["identifier", "title", "creator", "date", "description", "subject", "publisher", "language", "format"],
+          "rows": "page_size",
+          "page": "page",
+          "output": "json",
+          "sort[]": "downloads desc"
+        },
+        "auth": null,
+        "headers": null
+      },
+      "response_mapping": {
+        "results_path": "response.docs",
+        "total_path": "response.numFound",
+        "fields": {
+          "title": "title",
+          "authors": "creator",
+          "year": { "custom": "archive_year" },
+          "abstract": "description",
+          "url": { "custom": "archive_url" },
+          "download_url": { "custom": "archive_download" },
+          "pdf_url": { "custom": "archive_download" },
+          "language": "language",
+          "subjects": "subject",
+          "publisher": "publisher",
+          "identifier": "identifier",
+          "doc_type": { "custom": "archive_type" },
+          "source_name": { "static": "Internet Archive" }
+        }
+      }
+    },
+    {
+      "id": "openaccess",
+      "name": "Unpaywall",
+      "description": "Open Access lookup via DOI",
+      "type": "journal",
+      "language": "multi",
+      "enabled": true,
+      "api_available": true,
+      "handler": "custom_openaccess",
+      "config": {
+        "base_url": "https://api.unpaywall.org/v2",
+        "email": "admin@literasiai.id"
+      },
+      "response_mapping": {}
+    },
+    {
+      "id": "sciencedirect",
+      "name": "ScienceDirect",
+      "description": "Elsevier — sains, teknologi, kedokteran (berlangganan)",
+      "type": "journal",
+      "language": "en",
+      "enabled": true,
+      "api_available": true,
+      "handler": "subscription",
+      "config": {
+        "doi_prefixes": ["10.1016"],
+        "url_template": "https://www.sciencedirect.com/science/article/pii/{doi}"
+      }
+    },
+    {
+      "id": "wiley",
+      "name": "Wiley Online Library",
+      "description": "Wiley — multidisiplin (berlangganan)",
+      "type": "journal",
+      "language": "en",
+      "enabled": true,
+      "api_available": true,
+      "handler": "subscription",
+      "config": {
+        "doi_prefixes": ["10.1002", "10.1111", "10.1001"],
+        "url_template": "https://onlinelibrary.wiley.com/doi/{doi}"
+      }
+    },
+    {
+      "id": "springerlink",
+      "name": "SpringerLink",
+      "description": "Springer — sains, teknik, kedokteran (berlangganan)",
+      "type": "journal",
+      "language": "en",
+      "enabled": true,
+      "api_available": true,
+      "handler": "subscription",
+      "config": {
+        "doi_prefixes": ["10.1007"],
+        "url_template": "https://link.springer.com/article/{doi}"
+      }
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald Insight",
+      "description": "Emerald — manajemen, bisnis, pendidikan (berlangganan)",
+      "type": "journal",
+      "language": "en",
+      "enabled": true,
+      "api_available": true,
+      "handler": "subscription",
+      "config": {
+        "doi_prefixes": ["10.1108"],
+        "url_template": "https://www.emerald.com/insight/content/doi/{doi}"
+      }
+    },
+    {
+      "id": "tandfonline",
+      "name": "Taylor & Francis Online",
+      "description": "Taylor & Francis — multidisiplin (berlangganan)",
+      "type": "journal",
+      "language": "en",
+      "enabled": true,
+      "api_available": true,
+      "handler": "subscription",
+      "config": {
+        "doi_prefixes": ["10.1080"],
+        "url_template": "https://www.tandfonline.com/doi/{doi}"
+      }
+    }
+  ],
+  "content_groups": {
+    "journal": ["doaj", "pubmed", "arxiv", "core", "garuda", "sinta", "neliti",
+                "sciencedirect", "wiley", "springerlink", "emerald", "tandfonline"],
+    "book": ["gutenberg", "openlibrary", "archive"],
+    "all": ["doaj", "pubmed", "arxiv", "core", "garuda", "sinta", "neliti",
+            "gutenberg", "openlibrary", "archive",
+            "sciencedirect", "wiley", "springerlink", "emerald", "tandfonline"]
+  },
+  "global": {
+    "default_page_size": 10,
+    "request_timeout": 15
+  }
+}
